@@ -1,8 +1,11 @@
 {
+  "build": "postcss css/styles.css -o build/styles.css",
+  
   "name": "site",
   "version": "1.0.0",
   "description": "Portfolio Site",
   "main": "index.js",
+  
   "dependencies": {
     "tailwindcss": "^2.0.1"
   },
@@ -10,16 +13,17 @@
     "autoprefixer": "^10.0.2",
     "postcss": "^8.1.9"
   },
+  
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
   
   "repository": {
     "type": "git",
     "url": "git://github.com/hmaskell/site.git"
   }
-  
 }
