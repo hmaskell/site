@@ -4,6 +4,13 @@
 
 
 @layer base {
+
+    @font-face {
+    font-family: 'Fredoka One', serif;
+    }
+    @font-face {
+      font-family: 'Open Sans', sans-serif;
+    }
     @font-face {
         font-family: Inter;
         font-weight: 100;
