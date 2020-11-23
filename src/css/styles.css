@@ -7,46 +7,46 @@
     @font-face {
         font-family: Inter;
         font-weight: 100;
-        src: url(../assets/fonts/Inter-Thin-100.ttf) format("ttf");
+        src: url(../fonts/Inter-Thin-100.ttf) format("ttf");
       }
     @font-face {
         font-family: Inter;
         font-weight: 200;
-        src: url(../assets/fonts/Inter-ExtraLight-200.ttf) format("ttf");
+        src: url(../fonts/Inter-ExtraLight-200.ttf) format("ttf");
       }
       @font-face {
         font-family: Inter;
         font-weight: 300;
-        src: url(../assets/fonts/Inter-Light-300.ttf) format("ttf");
+        src: url(../fonts/Inter-Light-300.ttf) format("ttf");
       }
     @font-face {
       font-family: Inter;
       font-weight: 400;
-      src: url(../assets/fonts/Inter-400.ttf) format("ttf");
+      src: url(../fonts/Inter-400.ttf) format("ttf");
     }
     @font-face {
       font-family: Inter;
       font-weight: 500;
-      src: url(../assets/fonts/Inter-Medium-500.ttf) format("ttf");
+      src: url(../fonts/Inter-Medium-500.ttf) format("ttf");
     }
     @font-face {
         font-family: Inter;
         font-weight: 600;
-        src: url(../assets/fonts/Inter-SemiBold-600.ttf) format("ttf");
+        src: url(../fonts/Inter-SemiBold-600.ttf) format("ttf");
       }
       @font-face {
         font-family: Inter;
         font-weight: 700;
-        src: url(../assets/fonts/Inter-Bold-700.ttf) format("ttf");
+        src: url(../fonts/Inter-Bold-700.ttf) format("ttf");
       }
       @font-face {
         font-family: Inter;
         font-weight: 800;
-        src: url(../assets/fonts/Inter-ExtraBold-800.ttf) format("ttf");
+        src: url(../fonts/Inter-ExtraBold-800.ttf) format("ttf");
       }
       @font-face {
         font-family: Inter;
         font-weight: 900;
-        src: url(../assets/fonts/Inter-Black-900) format("ttf");
+        src: url(../fonts/Inter-Black-900.ttf) format("ttf");
       }
   }
