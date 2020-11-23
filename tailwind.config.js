@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
@@ -12,7 +14,7 @@ module.exports = {
   theme: {
     fontFamily: {
 
-     'sans': ['Inter'],
+     'sans': ['Inter', ...defaultTheme.fontFamily.sans],
     }
   }
 }
