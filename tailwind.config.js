@@ -24,19 +24,34 @@ module.exports = {
   purge: [],
   darkMode: false, // or 'media' or 'class'
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: theme => ({
+        'floop-img': "url('floops.svg')"
+      })
+
+    },
   },
   variants: {
-    extend: {},
+    extend: {
+      zIndex: {
+        '-10': '-10',
+      },
+      zIndex: ['hover', 'active'],
+    },
   },
   plugins: [
     hero_icons_plugin
   ],
 
   theme: {
+    boxShadow: {
+      '3xl': '0px 0px 15px 10px rgba(183,148,244,0.5)',
+      '4xl': '20px 0px 50px -10px #00C2D0, -15px -10px 50px -10px #E7005D, -5px 20px 50px -10px #FFE12E'
+    },
+
+
     fontFamily: {
-      'serif': ['Fredoka One', defaultTheme.fontFamily.serif],
-      'sans': ['Open Sans', defaultTheme.fontFamily.sans]
+      'sans': ['Nunito', defaultTheme.fontFamily.sans]
     }
   }
 }

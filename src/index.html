@@ -1,40 +1,36 @@
 <!doctype html>
-<html>
+<html lang="en">
 
     <head>
         <!-- ... -->
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Heather Maskell | Portfolio">
+        <meta name="author" content="Heather Maskell">
         <script src="bundle.js"></script>
         <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
             @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@300;600;700;800&display=swap');
         </style>
-
+        <link rel="icon" href="favicon.png">
     </head>
 
-    <body class=" font-sans">
-        <div class="bg-gray-900 bg-hero-bank-note">
-            <div class="flex items-center justify-between">
-                <div class="w-16">
-                    <img src="logo.svg" class="w-full">
-                </div>
-                <div class="text-purple-300 flex justify-end list-none">
-                    <li><a class="text-base leading-6 font-medium hover:text-pink-600 transition-colors duration-200 px-6"
-                            href="#">about</a></li>
-                    <li><a class="text-base leading-6 font-medium hover:text-pink-600 transition-colors duration-200 px-6"
-                            href="#">contact</a></li>
-                    <li><a class="text-base leading-6 font-medium hover:text-pink-600 transition-colors duration-200 px-6"
-                            href="#">night mode</a></li>
-                </div>
+    <body class="font-sans bg-gray-900 bg-hero-bank-note">
+        <!--<img src="floops.svg" class="w-full -z-10"> -->
+        <div class="">
+            <div class="nav">
+                <li><a class="nav-item" href="#contact">contact</a></li>
+                <li><a class="nav-item" href="">resume</a></li>
+                <!-- <li><a class="hover:text-pink-600 transition-colors duration-200 px-6" href="#">night mode</a></li> -->
             </div>
-
             <div class="py-12">
-                <h1
-                    class="text-gray-100 tracking-widest text-3xl sm:text-5xl lg:text-6xl uppercase flex justify-center font-serif ">
-                    Heather
-                    Maskell</h1>
-                <h2 class="text-gray-300 tracking-widest text-xl flex justify-center mt-5">UX Designer</h2>
-                <!-- 
+                <div class="w-full flex">
+                    <img src="logo.svg" class="w-32 m-auto">
+                </div>
+                <div class="py-12">
+                    <h1 class="uppercase flex justify-center text-center">Heather Maskell</h1>
+                    <h2 class="flex justify-center">UX Designer</h2>
+                    <!-- 
                 <div class="flex items-center justify-center w-full space-x-1 mt-12">
                     <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#fefefe">
                         <path fill-rule="evenodd"
@@ -44,6 +40,7 @@
                     <h3 class="text-gray-400">Seattle, WA</h3>
                 </div>
                  -->
+                </div>
             </div>
 
             <!-- 
@@ -68,48 +65,157 @@
         </a>
     </div>
 -->
-        <div class="font-serif">
-            <div
-                class="w-screen relative focus:ring-2 focus:ring-purple-600 focus:border-transparent bg-none hover:bg-yellow-400 transition-colors duration-200">
-                <img src="img1.jpg" class="w-full">
-                <div class="w-screen absolute top-1/2 text-right pr-16">
-                    <h2 class="text-3xl sm:text-5xl lg:text-6xl leading-none font-extrabold text-gray-100">
-                        Tsilhqot'in Tutor
-                    </h2>
+        <div class="font-serif" id="work">
+
+            <div class="project project-right flex-row">
+                <div class="w-1/2">
+                    <img src="vind-lp.png">
+                </div>
+                <div class="w-1/2 my-auto ml-4">
+                    <h1>Vind</h1>
+                    <h2 class="text-yellow-300">Wine Collection App Design</h2>
+                    <button>
+                        <a href="vind.html">
+                            Learn More
+                            <span class="hero">
+                                <svg class="w-6 h-6 pl-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </button>
                 </div>
             </div>
 
-            <div class="w-full relative">
-                <img src="img2.jpg" class="w-full">
-                <div class="w-screen absolute top-1/2 text-center">
-                    <h2 class="text-3xl sm:text-5xl lg:text-6xl leading-none font-extrabold text-gray-100">
-                        Women's Resource Centre
-                    </h2>
+            <div class="project project-left flex justify-center flex-row-reverse w-full">
+                <div class="sm:w-full md:w-1/2">
+                    <img src="paraxplore-lp.png">
+                </div>
+                <div class="sm:w-full md:w-1/2 my-auto pl-12">
+                    <h1>ParaXplore</h1>
+                    <h2 class="text-pink-500">Selection and Sorting App Design</h2>
+                    <button>
+                        <a href="paraxplore.html">
+                            Learn More
+                            <span class="hero">
+                                <svg class="w-6 h-6 pl-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </button>
                 </div>
             </div>
-
-            <div class="w-screen relative">
-                <img src="img3.jpg" class="w-full">
-                <div class="w-screen absolute top-1/2 text-left pl-16">
-                    <h2 class="text-3xl sm:text-5xl lg:text-6xl leading-none font-extrabold text-gray-100">
-                        ParaXplore
-                    </h2>
+            <!--
+            <div class="project project-right flex">
+                <div class="w-1/2">
+                    <img src="centre-lp.png">
+                </div>
+                <div class="w-1/2 my-auto ml-4">
+                    <h1>Women's Centre</h1>
+                    <h2 class="">Program Introduction Concept</h2>
+                    <button>
+                        <a href="paraxplore.html">
+                            Learn More
+                            <span class="hero">
+                                <svg class="w-6 h-6 pl-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7"></path>
+                                </svg>
+                            </span>
+                        </a>
+                    </button>
                 </div>
             </div>
-        </div>
+ -->
+            <div id="about" class="px-6 py-12">
+                <div class="w-full flex justify-center">
+                    <img src="me3.png" class="w-64 h-64 rounded-full shadow-4xl" alt="ya girl heeb">
+                </div>
+                <div class="text-gray-300 w-full pb-12">
+                    <h1>About</h1>
+                    <h2>Hey, I'm Heather</h2>
+                    <div class="w-1/2">
+                        <h4>I exist in two states:</h4>
+                        <div class="about-div">
+                            <span>1</span>
+                            <p>Dreaming up delightful things to design, paint, sew, build, write, cook, bake, record, or
+                                code.</p>
+                        </div>
+                        <div>
+                            <span>2</span>
+                            <p>Throwing myself aggessively into the actualization of those dreams.</p>
+                        </div>
+                    </div>
 
-        <div id="about" class="bg-pink-800 bg-hero-aztec py-12">
-            <img src="me.png" class="w-32 h-32 rounded-full mx-auto shadow-xl" alt="ya girl heeb">
-            <p class="text-gray-300 tracking-widest text-xl flex justify-center mt-5">Just a bean with a dream!</p>
-        </div>
+                    <h1 class="font-serif tracking-widest text-3xl mt-4 py-5 flex justify-center">Hi, I'm Heather!</h1>
+                    <div class="">
+                        <p>I'm a creative through and through. I have two states: 1) Dreaming up something to write,
+                            design,
+                            paint, build, bake, sew, record, or code, and 2) Throwing myself aggessively into the
+                            actualization of those dreams.</h2>
+                            <h2 class="text-purple-300 tracking-widest text-xl">Work Experience</h2>
+                            <ul class="text-sm list-disc px-5 leading-6">
+                                <li class="py-2">Worked in retail throughout high school and university as a cashier,
+                                    Christmas
+                                    Elf, and
+                                    Apple Store Genius.
+                                </li>
+                                <li class="py-2">Bachelor of Science in Interactive Arts and Technology, concentration
+                                    in
+                                    Interactive Systems
+                                </li>
+                                <li class="py-2">Completed 2 UX internships, at Microsoft and Evident Point Software Co
+                        </p>
+                        <li class="py-2">Volunteered for 6 months as a UX Designer for TR Domestic Violence Inc
+                            designing an
+                            emergency
+                            app</li>
+                        </ul>
+                        <h2 class="text-purple-300 tracking-widest text-xl">Skills</h2>
+                        <ul>
 
+                            <li class="py-2">Adobe Creative Suite</li>
+                            <li class="py-2">Figma</li>
+                            <li class="py-2">Sketch</li>
+                            <li class="py-2">InVision</li>
+                        </ul>
+                        <ul>
+                            <li class="py-2">Presenting</li>
+                            <li class="py-2">Collaboration</li>
+                            <li class="py-2">User Research</li>
+                        </ul>
+                        <h2 class="text-purple-300 tracking-widest text-xl">Dream Job</h2>
+                        <p>Dream job: Improving the experience of using a product that I believe in with a
+                            passionate and
+                            collaborative team.</p>
+
+                    </div>
+                    </br>
+                    <p>If you're looking for someone to empathize with users, reimagine digital services as intuitive,
+                        attractive and delightful experiences, and collaborate candidly and diplomatically with a team
+                        to
+                        incorproate feedback and transform designs into code - I'm your girl!</p>
+                </div>
+            </div>
+            <!--
         <div id="contact" class="bg-indigo-900 bg-hero-hexagons">
-            <div class="px-2 pt-12">
-                <h3 class="text-2xl font-serif font-black text-center leading-6 text-gray-300">Hit me tf up!</h3>
-                <p class="mt-1 text-sm text-gray-300 text-center mx-4 mb-6">
-                    Project collaborations, job opportunities and friendship proposals all welcome!
+            <div class="px-2 py-12">
+                <h3 class="text-3xl font-serif font-black text-center leading-6 text-gray-300">Get in touch!</h3>
+                <p class="mt-1 text-m text-gray-300 text-left mx-4 m py-4">
+                    Collabs, job opportunities and friendship proposals are all enthusiastically
+                    encouraged.
                 </p>
-                <div class="pb-12 sm:w-1/2 w-full mx-auto rounded-md shadow-2xl">
+                <p class="mt-1 text-sm text-gray-300 text-center mx-4 mb-6 pb-4">
+                    Shoot me a message here or reach me through my socials below.
+                </p>
+                
+                <div class="sm:w-1/2 w-full mx-auto px-4 rounded-md shadow-2xl">
                     <form action="#" method="POST">
                         <div class="shadow sm:rounded-md sm:overflow-hidden">
                             <div class="px-4 py-5 bg-gray-900 space-y-6 sm:p-6">
@@ -119,9 +225,19 @@
                                             Name
                                         </label>
                                         <div class="mt-1 flex rounded-md shadow-sm">
-                                            <input type="text" id="company_website"
+                                            <input type="text" id="name"
                                                 class="bg-gray-700 p-2 focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-md sm:text-sm border-gray-300"
                                                 placeholder="Yuri Naim">
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <label for="contact-name" class="block text-sm font-medium text-gray-200">
+                                            Email
+                                        </label>
+                                        <div class="mt-1 flex rounded-md shadow-sm">
+                                            <input type="text" id="email"
+                                                class="bg-gray-700 p-2 focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-md sm:text-sm border-gray-300"
+                                                placeholder="yurinaim@example.com">
                                         </div>
                                     </div>
                                 </div>
@@ -137,7 +253,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="px-4 py-3 bg-gray-900 text-right sm:px-6">
+                            <div class="px-4 pb-6 bg-gray-900 text-right sm:px-6">
                                 <button type="submit"
                                     class="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                                     Save
@@ -146,10 +262,48 @@
                         </div>
                     </form>
                 </div>
+
+            <div class="flex justify-center w-full py-4">
+                <a href="https://www.linkedin.com/in/heathermaskell">
+                    <img src="in-symbol.png" class="w-16 px-6">
+                </a>
+                <a href="https://www.instagram.com/heatherobyndesigns">
+                    <img src="at-symbol.png" class="w-16 px-6">
+                </a>
+                <a href="mailto:heatherobyndesigns@gmail.com">
+                    <img src="mail-symbol.png" class="w-16 px-6">
+                </a>
+
+            </div>
+                -->
+        </div>
+
+        <div id="contact" class="">
+            <div
+                class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
+                <h2 class="text-3xl text-gray-50 sm:text-4xl">
+                    <span class="block tracking-widest font-extrabold font-serif">Ready to meet?</span>
+                    <span class="block text-yellow-400 font-medium">Let's set up a call.</span>
+                </h2>
+                <div class="mt-8 lex lg:mt-0 lg:flex-shrink-0">
+                    <div class="inline-flex rounded-md shadow">
+                        <a href="mailto:hmaskell@sfu.ca"
+                            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-semibold rounded-md text-black bg-yellow-400 transition-color duration-200 hover:bg-pink-600">
+                            Email
+                        </a>
+                    </div>
+                    <div class="ml-3 inline-flex rounded-md shadow">
+                        <a href="https://linkedin.com/in/heathermaskell"
+                            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-semibold rounded-md text-yellow-400 bg-gray-900 transition-color duration-200 hover:bg-pink-600 hover:text-black">
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="bg-gray-900 text-gray-100 text-center p-4">
-            <p>Made by hand with love and TailwindCSS &hearts;</p>
+        </div>
+        <div class="bg-gray-900 font-sans text-pink-200 text-center p-4">
+            <p>Made by hand with love &hearts; 2020</p>
         </div>
     </body>
 

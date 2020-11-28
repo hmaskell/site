@@ -57,3 +57,63 @@
         src: url(../fonts/Inter-Black-900.ttf) format("ttf");
       }
   }
+
+  @layer components{
+
+  body{
+    
+  }
+
+  .project-div{
+    @apply bg-yellow-400;
+  }
+
+  .project{
+    @apply my-12 px-4 py-12 flex ;
+
+  }
+
+  .nav, .nav a{
+    @apply text-base leading-6 font-semibold text-purple-300;
+    @apply flex list-none m-2 sm:text-yellow-500 md:justify-end;
+  }
+
+  .nav-item{
+    @apply rounded-full border-0 transition-all duration-200 px-6 py-2; 
+    @apply hover:text-purple-50 transition-all duration-200;
+  }
+
+  button{
+    @apply bg-purple-300 rounded-full border-4 border-purple-400 transition-all duration-200;
+    @apply mt-6 py-1 px-4;
+    @apply text-base font-semibold;
+  }
+
+  button:hover{
+    @apply shadow-3xl border-purple-50 transition-all duration-200;
+  }
+
+  button a{
+    @apply text-gray-900 uppercase pl-1;
+    padding-top:.1rem;
+    @apply flex justify-center;
+  }
+
+  h1{
+    @apply text-gray-100 font-black tracking-widest text-3xl sm:text-5xl lg:text-6xl;
+  }
+
+  h2{
+    @apply tracking-widest text-xl mt-5;
+    color: #00C2D0;
+  }
+
+  h3{
+
+  }
+
+  p{
+
+  }
+
+}

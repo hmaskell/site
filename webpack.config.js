@@ -1,8 +1,19 @@
 const path = require("path");
+const fs = require("fs");
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 
-module.exports={
+const htmlRegex = /\.html$/;
+const srcFolder = path.resolve(__dirname, "src");
+const htmlFiles = fs.readdirSync(srcFolder)
+    .filter(filename => htmlRegex.test(filename));
+
+const htmlFileBuildRules = htmlFiles.map(filename => new HtmlWebpackPlugin({
+    filename: filename,
+    template: path.resolve(__dirname, 'src', filename)
+}));
+
+module.exports = {
     entry: "./src/index.js",
     output: {
         path: path.resolve(__dirname, "build"),
@@ -14,7 +25,7 @@ module.exports={
                 test: /\.css$/i,
                 use: [
                     'style-loader',
-                    {loader: "css-loader", options: {importLoaders: 1}},
+                    { loader: "css-loader", options: { importLoaders: 1 } },
                     'postcss-loader'
                 ]
             },
@@ -32,11 +43,9 @@ module.exports={
         contentBase: path.join(__dirname, 'build'),
         compress: true,
         port: 9000
-      },
+    },
     plugins: [
-        new HtmlWebpackPlugin({
-            template: "./src/index.html"
-        }),
+        ...htmlFileBuildRules,
         new CopyWebpackPlugin({
             patterns: [
                 { from: 'assets' }
