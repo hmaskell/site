@@ -15,21 +15,23 @@
         <link rel="icon" href="favicon.png">
     </head>
 
-    <body class="font-sans bg-gray-900 bg-hero-bank-note">
+    <body class="font-sans bg-gray-900 mx-4">
         <!--<img src="floops.svg" class="w-full -z-10"> -->
         <div class="">
             <div class="nav">
+                <li><a class="nav-item" href="/blog.html">blog</a></li>
                 <li><a class="nav-item" href="#contact">contact</a></li>
-                <li><a class="nav-item" href="">resume</a></li>
+                <li><a class="nav-item" href="https://tinyurl.com/heathermaskell">resume</a></li>
                 <!-- <li><a class="hover:text-pink-600 transition-colors duration-200 px-6" href="#">night mode</a></li> -->
             </div>
             <div class="py-12">
                 <div class="w-full flex">
-                    <img src="logo.svg" class="w-32 m-auto">
+                    <a class="w-32 m-auto" href="/index.html"><img src="logo.svg" class=""></a>
                 </div>
                 <div class="py-12">
                     <h1 class="uppercase flex justify-center text-center">Heather Maskell</h1>
                     <h2 class="flex justify-center">UX Designer</h2>
+
                     <!-- 
                 <div class="flex items-center justify-center w-full space-x-1 mt-12">
                     <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#fefefe">
@@ -40,6 +42,17 @@
                     <h3 class="text-gray-400">Seattle, WA</h3>
                 </div>
                  -->
+                </div>
+                <div class="mx-16">
+                    <div>
+                        <h1 class="sky">curious,</h1>
+                        <h1 class="peach">compassionate,</h1>
+                        <h1 class="lemon">+ collaborative</h1>
+                    </div>
+                    <div class="w-64">
+                        I’m interested in human behaviour, building solutions grounded in truth, and designing
+                        approachable products that follow through on their promises.
+                    </div>
                 </div>
             </div>
 
@@ -67,39 +80,44 @@
 -->
         <div class="font-serif" id="work">
 
-            <div class="project project-right flex-row">
-                <div class="w-1/2">
-                    <img src="vind-lp.png">
+            <a href="vind.html">
+                <div class="project project-right">
+                    <div class="w-full">
+                        <img src="vind-lp.png">
+                    </div>
+                    <div class="w-full my-5 md:pl-12 ">
+                        <div class="sm:pr-5 lg:pr-1">
+                            <h1>VIND</h1>
+                            <h2 class="text-yellow-300">Helping wine collectors manage their collections.</h2>
+                            <div class="md:inline-flex my-5">
+                                <a href="vind.html"
+                                    class="inline-flex justify-start ml-0 pl-0 text-base font-semibold text-purple-400 transition-color duration-200 hover:text-white">
+                                    Learn More <span class="hero">
+                                        <svg class="w-6 h-6 pl-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 5l7 7-7 7"></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="w-1/2 my-auto ml-4">
-                    <h1>Vind</h1>
-                    <h2 class="text-yellow-300">Wine Collection App Design</h2>
-                    <button>
-                        <a href="vind.html">
-                            Learn More
-                            <span class="hero">
-                                <svg class="w-6 h-6 pl-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M9 5l7 7-7 7"></path>
-                                </svg>
-                            </span>
-                        </a>
-                    </button>
-                </div>
-            </div>
+            </a>
 
-            <div class="project project-left flex justify-center flex-row-reverse w-full">
-                <div class="sm:w-full md:w-1/2">
-                    <img src="paraxplore-lp.png">
+            <div class="project project-left flex-col flex justify-center md:flex-row-reverse w-full">
+                <div class="w-full">
+                    <img src="paraxplore-lp.png" class="w-full">
                 </div>
-                <div class="sm:w-full md:w-1/2 my-auto pl-12">
+                <div class="w-full my-7 md:pl-12">
                     <h1>ParaXplore</h1>
-                    <h2 class="text-pink-500">Selection and Sorting App Design</h2>
-                    <button>
-                        <a href="paraxplore.html">
-                            Learn More
-                            <span class="hero">
+                    <h2 class="text-pink-500">Selection Process App</h2>
+
+                    <div class="md:inline-flex my-5">
+                        <a href="paraxplore.html"
+                            class="inline-flex justify-start ml-0 pl-0 text-base font-semibold text-purple-400 transition-color duration-200 hover:text-white">
+                            Learn More <span class="hero">
                                 <svg class="w-6 h-6 pl-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -107,7 +125,8 @@
                                 </svg>
                             </span>
                         </a>
-                    </button>
+                    </div>
+
                 </div>
             </div>
             <!--
@@ -132,7 +151,7 @@
                     </button>
                 </div>
             </div>
- -->
+ 
             <div id="about" class="px-6 py-12">
                 <div class="w-full flex justify-center">
                     <img src="me3.png" class="w-64 h-64 rounded-full shadow-4xl" alt="ya girl heeb">
@@ -288,13 +307,13 @@
                 <div class="mt-8 lex lg:mt-0 lg:flex-shrink-0">
                     <div class="inline-flex rounded-md shadow">
                         <a href="mailto:hmaskell@sfu.ca"
-                            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-semibold rounded-md text-black bg-yellow-400 transition-color duration-200 hover:bg-pink-600">
+                            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-semibold rounded-md text-black bg-purple-400 transition-color duration-200 hover:bg-pink-600">
                             Email
                         </a>
                     </div>
                     <div class="ml-3 inline-flex rounded-md shadow">
                         <a href="https://linkedin.com/in/heathermaskell"
-                            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-semibold rounded-md text-yellow-400 bg-gray-900 transition-color duration-200 hover:bg-pink-600 hover:text-black">
+                            class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-semibold rounded-md text-purple-400 transition-color duration-200 hover:bg-pink-600 hover:text-black">
                             LinkedIn
                         </a>
                     </div>
@@ -302,7 +321,7 @@
             </div>
         </div>
         </div>
-        <div class="bg-gray-900 font-sans text-pink-200 text-center p-4">
+        <div class="bg-gray-900 font-sans text-gray-600 text-center p-4">
             <p>Made by hand with love &hearts; 2020</p>
         </div>
     </body>

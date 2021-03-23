@@ -6,62 +6,58 @@
 @layer base {
 
     @font-face {
-    font-family: 'Fredoka One', serif;
+      font-family: Capriola;
+      font-weight: 400;
+      src: url(../fonts/Capriola-Regular.ttf) format("ttf");
     }
+
     @font-face {
-      font-family: 'Open Sans', sans-serif;
+      font-family: Inter;
+      font-weight: 200;
+      src: url(../fonts/Inter-ExtraLight-200.ttf) format("ttf");
     }
-    @font-face {
-        font-family: Inter;
-        font-weight: 100;
-        src: url(../fonts/Inter-Thin-100.ttf) format("ttf");
-      }
-    @font-face {
-        font-family: Inter;
-        font-weight: 200;
-        src: url(../fonts/Inter-ExtraLight-200.ttf) format("ttf");
-      }
-      @font-face {
-        font-family: Inter;
-        font-weight: 300;
-        src: url(../fonts/Inter-Light-300.ttf) format("ttf");
-      }
+
     @font-face {
       font-family: Inter;
       font-weight: 400;
       src: url(../fonts/Inter-400.ttf) format("ttf");
     }
+
     @font-face {
       font-family: Inter;
       font-weight: 500;
       src: url(../fonts/Inter-Medium-500.ttf) format("ttf");
     }
-    @font-face {
-        font-family: Inter;
-        font-weight: 600;
-        src: url(../fonts/Inter-SemiBold-600.ttf) format("ttf");
-      }
-      @font-face {
-        font-family: Inter;
-        font-weight: 700;
-        src: url(../fonts/Inter-Bold-700.ttf) format("ttf");
-      }
-      @font-face {
-        font-family: Inter;
-        font-weight: 800;
-        src: url(../fonts/Inter-ExtraBold-800.ttf) format("ttf");
-      }
-      @font-face {
-        font-family: Inter;
-        font-weight: 900;
-        src: url(../fonts/Inter-Black-900.ttf) format("ttf");
-      }
+
+  }
+
+  :root {
+    --heather-light:#DCBCFA;
+    --heather-dark:#B794F4;
+    --dark:#0F1222;
+    --darker:#02061B;
+    --light:#FAF1F3;
+    --peach:#EA736B;
+    --lemon:#FFC700;
+    --sky:#61D0E9;
   }
 
   @layer components{
 
   body{
-    
+    color: var(--light);
+  }
+
+  .lemon{
+    color: var(--lemon);
+  }
+
+  .sky{
+    color: var(--sky);
+  }
+
+  .peach{
+    color: var(--peach);
   }
 
   .project-div{
@@ -69,17 +65,18 @@
   }
 
   .project{
-    @apply my-12 px-4 py-12 flex ;
-
+    @apply flex-col md:flex-row w-full px-4 my-12 flex bg-gray-900 rounded-md md:bg-none md:mx-0 flex bg-gray-900 rounded-md md:bg-none;
+    
   }
 
   .nav, .nav a{
+    float: right;
     @apply text-base leading-6 font-semibold text-purple-300;
-    @apply flex list-none m-2 sm:text-yellow-500 md:justify-end;
+    @apply flex list-none m-2 sm:text-purple-300 justify-end w-auto;
   }
 
   .nav-item{
-    @apply rounded-full border-0 transition-all duration-200 px-6 py-2; 
+    @apply rounded-full border-0 transition-all duration-200 sm:px-3 md:px-6 py-2; 
     @apply hover:text-purple-50 transition-all duration-200;
   }
 
@@ -100,20 +97,67 @@
   }
 
   h1{
-    @apply text-gray-100 font-black tracking-widest text-3xl sm:text-5xl lg:text-6xl;
+    font-size: 2.411em;
+    font-family: Capriola;
+  }
+
+  .subhead{
+    font-family: Inter;
+    font-size: 19px;
+
   }
 
   h2{
-    @apply tracking-widest text-xl mt-5;
-    color: #00C2D0;
+    font-size: 1.953em;
+    font-family: Capriola;
   }
 
   h3{
+    font-size: 1.563em;
+    font-family: Capriola;
+  }
 
+  h4{
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-family: Capriola;
+  }
+
+  h5{
+    font-size: 1.143em;
+    font-family: Capriola;
+    text-transform: uppercase;
+  }
+
+  h6{
+    font-size: .8em;
+    font-family: Inter;
+    text-transform: uppercase;
+    font-weight: 200;
+    padding: 0,0,10px,0;
   }
 
   p{
-
+   font-size: 1em;
+   font-family: Inter;
+   font-weight: 200;
+   line-height: 22.85px;
   }
+
+  .caption{
+    font-size: .8em;
+    font-family: Inter;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+
+.info-card{
+  background-color: var(--darker);
+  border-radius: 10px;
+}
+
+ .card-item{
+   margin: 20px 0;
+ }
 
 }
