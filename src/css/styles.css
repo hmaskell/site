@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ LOADING FONTS
+*/
 
 @layer base {
 
@@ -9,6 +12,12 @@
       font-family: Capriola;
       font-weight: 400;
       src: url(../fonts/Capriola-Regular.ttf) format("ttf");
+    }
+
+    @font-face {
+      font-family: Inter;
+      font-weight: 300;
+      src: url(../fonts/Inter-Light-300.ttf) format("ttf");
     }
 
     @font-face {
@@ -31,6 +40,10 @@
 
   }
 
+/*
+ PALETTE STYLING
+*/
+
   :root {
     --heather-light:#DCBCFA;
     --heather-dark:#B794F4;
@@ -48,31 +61,122 @@
     color: var(--light);
   }
 
-  .lemon{
-    color: var(--lemon);
-  }
-
-  .sky{
-    color: var(--sky);
-  }
-
-  .peach{
-    color: var(--peach);
-  }
-
-  .project-div{
-    @apply bg-yellow-400;
-  }
 
   .project{
     @apply flex-col md:flex-row w-full px-4 my-12 flex bg-gray-900 rounded-md md:bg-none md:mx-0 flex bg-gray-900 rounded-md md:bg-none;
     
   }
 
+/*
+  TEXT STYLING
+*/
+
+  h1{
+    font-size: 2.411em;
+    font-family: Capriola;
+    font-weight: 200;
+  }
+
+  .subhead{
+    font-family: Inter;
+    font-size: 19px;
+    font-weight: 300;
+
+  }
+
+  h2{
+    font-size: 1.953em;
+    font-family: Capriola;
+    font-weight: 200;;
+  }
+
+  h3{
+    font-size: 1.563em;
+    font-family: Capriola;
+    font-weight: 200;
+  }
+
+  h4{
+    text-transform: uppercase;
+    font-size: 1.25em;
+    font-size: 17.5px;
+    font-family: Capriola;
+    font-weight: 200;
+  }
+
+  h5{
+    font-size: 1.143em;
+    font-size: 16px;
+    font-family: Capriola;
+    font-weight: 200;
+  }
+
+  h6{
+    font-size: 11.2px;
+    font-family: Inter;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 0 0 5px 0;
+    opacity: 0.8;
+  }
+
+  p{
+   font-size: 14px;
+   font-family: Inter;
+   font-weight: 300;
+   line-height: 22.85px;
+  }
+
+  .caption{
+    font-size: 11.2px;
+    font-family: Inter;
+    font-weight: 500; 
+    text-transform: uppercase;
+  }
+
+  a{
+    color: var(--heather-light);
+    font-family: Inter;
+    font-weight: 400; 
+  }
+
+  li{
+    font-size: 14px;
+    font-family: Inter;
+    font-weight: 300;
+    line-height: 22.85px;
+    color: var(--light);
+  }
+
+  .striken{
+    text-decoration: line-through;
+  }
+
+  .tooltipped{
+    text-decoration: underline;
+    color: var(--heather);
+
+  }
+
+  .half-highlight {
+    background: linear-gradient(to top, var(--peach) 50%, transparent 50%);
+    }
+
+  .project-header{
+    margin: 5px 0;
+  }
+
+
+/*
+ INTERACTION STYLING
+*/
+
+
   .nav, .nav a{
     float: right;
-    @apply text-base leading-6 font-semibold text-purple-300;
-    @apply flex list-none m-2 sm:text-purple-300 justify-end w-auto;
+    color: var(--heather-light);
+    @apply text-base leading-6 font-semibold;
+    @apply flex list-none m-2 justify-end w-auto;
   }
 
   .nav-item{
@@ -96,68 +200,234 @@
     @apply flex justify-center;
   }
 
-  h1{
-    font-size: 2.411em;
-    font-family: Capriola;
+/*
+ IMG STYLING
+*/
+
+  .logo{
+    padding-left:10px;  
   }
 
-  .subhead{
-    font-family: Inter;
-    font-size: 19px;
-
+  .logo-title{
+    color: var(--light);
+    padding:0;
   }
 
-  h2{
-    font-size: 1.953em;
-    font-family: Capriola;
+  .persona-img{
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
   }
 
-  h3{
-    font-size: 1.563em;
-    font-family: Capriola;
-  }
 
-  h4{
-    text-transform: uppercase;
-    font-size: 1.25em;
-    font-family: Capriola;
-  }
+/*
+ CARD / SECTION STYLING
+ */
 
-  h5{
-    font-size: 1.143em;
-    font-family: Capriola;
-    text-transform: uppercase;
-  }
-
-  h6{
-    font-size: .8em;
-    font-family: Inter;
-    text-transform: uppercase;
-    font-weight: 200;
-    padding: 0,0,10px,0;
-  }
-
-  p{
-   font-size: 1em;
-   font-family: Inter;
-   font-weight: 200;
-   line-height: 22.85px;
-  }
-
-  .caption{
-    font-size: .8em;
-    font-family: Inter;
-    font-weight: 200;
-    text-transform: uppercase;
-  }
 
 .info-card{
   background-color: var(--darker);
   border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0;
 }
 
  .card-item{
    margin: 20px 0;
  }
 
+ .cardless-item{
+  margin: 0 10px 30px 10px;
+ }
+
+ .cardless-item:last-of-type{
+  margin-bottom: 0;
+ }
+
+ .project-context{
+   display:flex;
+   flex-flow: row wrap;
+ }
+
+ .project-context .cardless-item{
+  flex:1; 
+  min-width: 200px;
+ }
+
+ /*
+ LIST STYLING
+ */
+
+ .info-card ul{
+   list-style-type: disc;
+ }
+
+ li{
+   margin: 8px 0;
+ }
+
+ul{
+  padding: 0 15px;
 }
+
+.chunked-list{
+  display: flex;
+  flex-flow: row wrap;
+  width:100%;
+}
+
+.list-chunk{
+  margin-top: 15px;
+  flex:1; 
+  min-width: 300px;
+}
+
+
+
+
+/* 
+SECTION HEADERS
+*/
+
+.section-header{
+  margin-bottom: 10px;
+}
+
+.section-line{
+  width: 30px;
+  height: 3px;
+  background-color:
+}
+
+hr{
+  width: 40px;
+  border-radius: 5px;
+  border:2px solid;
+  margin: 60px 0 20px 0;
+}
+
+.cardless-item h5, .info-card h5{
+  padding: 10px 0;
+}
+
+ /*
+ COLOR-BLOCK STYLING
+ */
+
+
+ .peach li::marker, .peach .caption, .peach h1, .peach h2, .peach h3, .peach h5, .peach span{
+  color: var(--peach);
+}
+
+.sky li::marker, .sky .caption, .sky h1, .sky h2, .sky h3, .sky h5, .sky span{
+  color: var(--sky);
+}
+
+.lemon li::marker, .lemon .caption, .lemon h1, .lemon h2, .lemon h3, .lemon h5, .lemon span{
+  color: var(--lemon);
+}
+
+.peach hr{
+  background-color: var(--peach);
+  border-color: var(--peach);
+}
+
+.sky hr{
+  background-color: var(--sky);
+  border-color: var(--sky);
+}
+
+.lemon hr{
+  background-color: var(--lemon);
+  border-color: var(--lemon);
+}
+
+.irregular{
+  color: var(--light)!important;
+}
+
+ /*
+ CUSTOM STYLING
+ */
+
+.intro-info{
+  width: 100%;
+  display: 
+}
+
+ .persona-title{
+  display: flex;
+  justify-content: center;
+  color: var(--light);
+}
+
+.persona-attributes{
+  margin:20px 0;  
+}
+
+ .key-value-persona{
+  display: flex;
+  width: 100%;;
+}
+
+.key-value-persona .caption{
+  text-align: right;
+  width:50%;
+  padding-right: 10px;
+
+}
+
+.key-value-persona p{
+  text-align: left;
+  width:50%;
+}
+
+.quote-card{
+  display:flex;
+  flex-flow: row;
+  padding: 15px 20px;
+}
+
+.quote-mark{
+  flex-grow: 1;
+  padding-right:10px;
+}
+
+.quote h3{
+  padding-bottom:10px;
+}
+
+.quote{
+  flex-grow: 1;
+  margin-bottom: 15px;
+  padding-right:15px;
+}
+
+.sketch-chunk:first-of-type{
+  margin-top: 0;
+}
+
+.sketch-chunk{
+  margin-top: 40px;
+}
+
+.sketch-chunk h5{
+  float:right;
+  margin-right: -13px;
+  border-radius: 5px 0 0 5px;
+  padding: 0 12px 2px 8px;
+  background-color: var(--lemon);
+  color: var(--darker);
+}
+
+.sketch-chunk .caption{
+  margin-bottom: 10px;
+}
+
+.problem-statement{
+  max-width:400px;
+}
+
+
+}
+
