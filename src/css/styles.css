@@ -224,6 +224,21 @@
  CARD / SECTION STYLING
  */
 
+ .demo{
+   display: flex;
+   flex-flow: row;
+   overflow-x: auto;
+   overflow-y: hidden;
+   white-space: nowrap;
+   width: 100%;
+ }
+
+ .demo img{
+   min-width: 300px;
+   padding: 0 5px 10px 0;
+ }
+
+
 
 .info-card{
   background-color: var(--darker);
@@ -291,6 +306,10 @@ SECTION HEADERS
 
 .section-header{
   margin-bottom: 10px;
+}
+
+.heather-attributes{
+  min-width:350px;
 }
 
 .section-line{
