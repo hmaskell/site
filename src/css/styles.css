@@ -11,37 +11,6 @@
   @import url('https://fonts.googleapis.com/css2?family=Capriola&family=Inter:wght@200;300;400;500&display=swap');
   font-family: 'Capriola', sans-serif;
   font-family: 'Inter', sans-serif;
-/*
-    @font-face {
-      font-family: Capriola;
-      font-weight: 400;
-      src: url(../fonts/Capriola-Regular.ttf) format("ttf");
-    }
-
-    @font-face {
-      font-family: Inter;
-      font-weight: 300;
-      src: url(../fonts/Inter-Light-300.ttf) format("ttf");
-    }
-
-    @font-face {
-      font-family: Inter;
-      font-weight: 200;
-      src: url(../fonts/Inter-ExtraLight-200.ttf) format("ttf");
-    }
-
-    @font-face {
-      font-family: Inter;
-      font-weight: 400;
-      src: url(../fonts/Inter-400.ttf) format("ttf");
-    }
-
-    @font-face {
-      font-family: Inter;
-      font-weight: 500;
-      src: url(../fonts/Inter-Medium-500.ttf) format("ttf");
-    }
-*/
   }
 
 /*
@@ -223,6 +192,33 @@
     padding: 20px 0;
   }
 
+  .demo img{
+    min-width: 300px;
+    padding: 0 5px 10px 0;
+  }
+
+  .sketch-and-cap{
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+
+  .sketch-chunk img{
+    margin:auto;
+    flex: 1;
+    min-width:200px;
+  }
+
+  .sketch-chunk .sketch-info{
+    max-width: 500px;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    min-width: 200px;
+  }
+
+
+
 
 /*
  CARD / SECTION STYLING
@@ -236,13 +232,6 @@
    white-space: nowrap;
    width: 100%;
  }
-
- .demo img{
-   min-width: 300px;
-   padding: 0 5px 10px 0;
- }
-
-
 
 .info-card{
   background-color: var(--darker);
@@ -271,6 +260,11 @@
  .project-context .cardless-item{
   flex:1; 
   min-width: 200px;
+ }
+
+ .persona-context{
+  columns: 300px;
+  margin-right: 5px;
  }
 
  /*
@@ -449,6 +443,8 @@ hr{
 
 .problem-statement{
   max-width:400px;
+  margin: auto;
+  padding: 15px 15px 20px 15px;
 }
 
 
