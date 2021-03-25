@@ -8,6 +8,10 @@
 
 @layer base {
 
+  @import url('https://fonts.googleapis.com/css2?family=Capriola&family=Inter:wght@200;300;400;500&display=swap');
+  font-family: 'Capriola', sans-serif;
+  font-family: 'Inter', sans-serif;
+/*
     @font-face {
       font-family: Capriola;
       font-weight: 400;
@@ -37,7 +41,7 @@
       font-weight: 500;
       src: url(../fonts/Inter-Medium-500.ttf) format("ttf");
     }
-
+*/
   }
 
 /*
