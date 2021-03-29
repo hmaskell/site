@@ -36,9 +36,13 @@
 
 
   .project{
-    @apply flex-col md:flex-row w-full px-4 my-12 flex bg-gray-900 rounded-md md:bg-none md:mx-0 flex bg-gray-900 rounded-md md:bg-none;
-    
+    @apply flex-col md:flex-row w-full px-4 my-12 flex rounded-md md:mx-0;
   }
+
+  .project-card{
+    background-color: var(--darker);
+  }
+
 
 /*
   TEXT STYLING
@@ -53,8 +57,8 @@
   .subhead{
     font-family: Inter;
     font-size: 19px;
-    font-weight: 300;
-
+    font-weight: 200;
+    line-height: 31px;
   }
 
   h2{
@@ -109,13 +113,10 @@
 
   a{
     color: var(--heather-light);
-    font-family: Inter;
-    font-weight: 400; 
   }
 
   li{
     font-size: 14px;
-    font-family: Inter;
     font-weight: 300;
     line-height: 22.85px;
     color: var(--light);
@@ -148,29 +149,72 @@
   .nav, .nav a{
     float: right;
     color: var(--heather-light);
-    @apply text-base leading-6 font-semibold;
-    @apply flex list-none m-2 justify-end w-auto;
+    display: flex;
+    list-style-type: none;
+  }
+
+  .nav{
+    font-family: Capriola;
+    font-weight:200px!important;
+    width:100%;
+    justify-content: space-around;
+    @apply sm:mt-2 sm:w-auto;
+    border: 2px 0 solid var(--heather-light);
+
+  }
+
+  .nav a{
+    margin: 0.5rem;
+    font-size: 1rem;
   }
 
   .nav-item{
-    @apply rounded-full border-0 transition-all duration-200 sm:px-3 md:px-6 py-2; 
+
+    @apply rounded-full border-0 transition-all duration-200; 
     @apply hover:text-purple-50 transition-all duration-200;
+
   }
 
   button{
-    @apply bg-purple-300 rounded-full border-4 border-purple-400 transition-all duration-200;
+/*  @apply bg-purple-300 rounded-full border-4 border-purple-400 transition-all duration-200;
     @apply mt-6 py-1 px-4;
-    @apply text-base font-semibold;
+    @apply text-base font-semibold; */
+    width: auto;
+    width: 200px;
+    padding: 13px 19px;
+  }
+
+  .ghost-button{
+    border-radius: 60px;
+    border: 3px solid var(--heather-dark);
+    color: var(--heather-light);
+    @apply transition-all ease-in-out duration-200;
+  }
+
+  .ghost-button h5{
+    color: var(--heather-light)!important;
+
+  }
+
+  .ghost-button i[class^="ph"] {
+    color: var(--heather-light);
   }
 
   button:hover{
-    @apply shadow-3xl border-purple-50 transition-all duration-200;
+    @apply shadow-3xl transition-all ease-in-out duration-200;
+    border: 3px solid var(--darker);
+    background-color: var(--heather-darker);
+    color: var(--darker);
   }
 
   button a{
-    @apply text-gray-900 uppercase pl-1;
-    padding-top:.1rem;
     @apply flex justify-center;
+  }
+
+  .button-div{
+    display: flex;
+    justify-content: center;
+    margin-bottom:2rem;
   }
 
 /*
@@ -217,7 +261,20 @@
     min-width: 200px;
   }
 
+/* ICON STYLING */
 
+  i[class^="ph"] {
+    color: var(--light);
+    font-size: 20px;
+  }
+
+  .icon-left {
+    padding-right: 10px;
+  }
+
+  .icon-right {
+    padding-left: 10px;
+  }
 
 
 /*
@@ -267,6 +324,16 @@
   margin-right: 5px;
  }
 
+.featured-flair{
+  padding: 1rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: end;
+  color: var(--light);
+}
+
+
+
  /*
  LIST STYLING
  */
@@ -306,9 +373,22 @@ SECTION HEADERS
   margin-bottom: 10px;
 }
 
-.heather-attributes{
-  min-width:350px;
+.heather-intro{
+  padding: 20px 20px 0 20px;
+  display: flex;
+  flex-flow: column wrap;
+  align-self: center;
 }
+
+.heather-attributes{
+  flex-grow:1;
+  padding-bottom:10px;
+}
+
+.intro-subhead{
+  flex-grow:1;
+  margin-bottom: 30px;
+ }
 
 .section-line{
   width: 30px;
