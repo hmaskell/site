@@ -30,13 +30,16 @@ module.exports = {
                 ]
             },
             {
-                test: /\.(png|svg|jpg|gif)$/,
-                type: 'asset/resource',
-            },
-            {
-                test: /\.ttf*/,
-                use: ['url-loader?limit=100000']
+                test: /\.html$/i,
+                loader: "ejs-compiled-loader",
+                options: {
+                    htmlmin: true,
+                    htmlminOoptions: {
+                        removeComments: true
+                    }
+                }
             }
+
         ]
     },
     devServer: {
