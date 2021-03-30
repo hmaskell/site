@@ -260,9 +260,9 @@
   }
 
   .sketch-chunk img{
-    margin:auto;
     flex: 1;
     min-width:200px;
+    max-width: 600px;
   }
 
   .sketch-chunk .sketch-info{
@@ -271,6 +271,10 @@
     align-items: center;
     justify-content: center;
     min-width: 200px;
+  }
+
+  .sketch-info{
+    align-content: center;
   }
 
 /* ICON STYLING */
@@ -300,6 +304,11 @@
   overflow-y: hidden;
   white-space: nowrap;
   width: 100%;
+}
+
+.carousel img{
+  padding: 0 10px;
+  height:auto;
 }
 
 .carousel-card{
