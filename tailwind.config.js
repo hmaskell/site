@@ -21,7 +21,11 @@ var hero_icons_plugin = require("tailwind-heropatterns")({
 });
 
 module.exports = {
-  purge: [],
+  purge: {
+    enabled: true,
+    content: ['./src/**/*.html'],
+    layers: ['base', 'utilities']
+  },
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
