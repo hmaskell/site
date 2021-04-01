@@ -185,6 +185,29 @@ li {
   margin-bottom: 2rem;
 }
 
+.project-nav{
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+  background-color: var(--darker);
+  padding: 1rem;
+}
+
+.project-nav a{
+  margin-right: 1rem;
+}
+
+.fixedElement {
+  background-color: #c0c0c0;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:100;
+}
+
 /*
  IMG STYLING
 */
@@ -213,12 +236,13 @@ li {
   display: flex;
   flex-flow: row wrap;
   width: 100%;
+  align-items:center;
 }
 
 .sketch-chunk img {
   flex: 1;
   min-width: 200px;
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .sketch-chunk .sketch-info {
@@ -300,6 +324,7 @@ i[class^="ph"] {
   margin:  0 0 20px 0;
   height: auto;
   width: 100%;
+  max-width: 500px;
 }
 
 .carousel-card-text{
@@ -335,8 +360,13 @@ i[class^="ph"] {
 }
 
 .persona-context {
-  columns: 300px;
   margin-right: 5px;
+}
+
+.persona-card{
+  background-color: var(--dark);
+  border-radius: 10px;
+  padding: 1rem;
 }
 
 .featured-flair {
@@ -345,6 +375,7 @@ i[class^="ph"] {
   flex-flow: row nowrap;
   justify-content: end;
   color: var(--light);
+  float: right;
 }
 
 .not-found{
@@ -356,6 +387,13 @@ i[class^="ph"] {
   justify-content: center;
 }
 
+.contact-cta{
+  flex-grow:1;
+}
+
+.contact-buttons{
+  flex-grow:1;
+}
 
 /*
  LIST STYLING
@@ -604,6 +642,27 @@ hr {
   button a {
     @apply flex justify-center;
   }
+
+  .icon-button{
+    background-color: var(--heather-light);
+    border: 3px solid var(--heather-dark);
+    width:50px;
+    height: 50px;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+    border-radius: 25px;
+    display: flex;
+    margin-left: 1rem;
+  }
+
+  .icon-button i[class^="ph"]{
+    color: var(--dark);
+    font-size: 30px;
+    transform: translate(0, -30%);
+  }
+
+
 }
 
 
