@@ -39,6 +39,17 @@ body {
 }
 
 /*
+  ANIMATIONS
+*/
+
+
+@keyframes slidein{
+  from { transform:translateY(-411px); }
+  to   { transform: translateY(0); }
+}
+
+
+/*
   TEXT STYLING
 */
 
@@ -240,12 +251,37 @@ i[class^="ph"] {
  CARD / SECTION STYLING
  */
 
+ .under-construction{
+   display: flex;
+   flex-flow: row nowrap;
+   background-color: var(--lemon);
+   padding: 20px;
+   align-items: center;
+   justify-content: space-between;
+   animation: slidein .4s ease .2s 1 normal both running ;
+ }
+
+ .uc-section{
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+ }
+
+ .under-construction h5, .under-construction .caption, .under-construction i{
+  color: var(--dark);
+  display: flex;
+ }
+
+ .under-construction i{
+  padding-right: 10px;
+ }
+
+
 .carousel {
   display: flex;
   flex-flow: row;
   overflow-x: auto;
   overflow-y: hidden;
-  white-space: nowrap;
   width: 100%;
 }
 
@@ -253,13 +289,19 @@ i[class^="ph"] {
   background-color: var(--darker);
   display: flex;
   flex-flow: column wrap;
-  max-width: 60%;
+  width: 200px;
   padding: 20px;
+  margin: 0 10px;
 }
 
 .carousel img {
   padding: 0 10px;
+  margin:  0 0 20px 0;
   height: auto;
+  width: 100%;
+}
+
+.carousel-card-text{
 }
 
 .info-card {
@@ -555,5 +597,6 @@ hr {
     @apply flex justify-center;
   }
 }
+
 
 /* purgecss end ignore */
