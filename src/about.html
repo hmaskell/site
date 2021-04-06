@@ -20,94 +20,165 @@
         <link rel="icon" href="https://www.heathermaskell.com/favicon.png">
     </head>
 
-    <body class="font-sans bg-gray-900">
+    <body class="sticky-footer">
 
         <%- include header.html -%>
 
 
 
-            <div id="about" class="px-6 py-12">
+            <div id="about" class="px-2 py-12">
                 <div class="w-full flex justify-center">
                     <img src="me3.png" class="w-64 h-64 rounded-full shadow-4xl" alt="ya girl heeb">
                 </div>
-                <div class="text-gray-300 w-full pb-12">
-                    <h1>About</h1>
-                    <h2>Hey, I'm Heather</h2>
-                    <div class="w-1/2">
-                        <h4>I exist in two states:</h4>
-                        <div class="about-div">
-                            <span>1</span>
+
+                <div class="pt-8">
+                    <h1 class="flex justify-center">About Me</h1>
+                    <div class="lemon flex justify-center">
+                        <p class="subhead">Hey, I'm Heather</p>
+                    </div>
+                    <div class="info-card">
+                        <h5>I exist in two states:</h5>
+                        <div class="flex flex-row pb-2 align-top">
+                            <i class="ph-number-circle-one-fill numbered-bullet-point"></i>
                             <p>Dreaming up delightful things to design, paint, sew, build, write, cook, bake, record, or
                                 code.</p>
                         </div>
-                        <div>
-                            <span>2</span>
+                        <div class="flex flex-row align-top">
+                            <i class="ph-number-circle-two-fill numbered-bullet-point"></i>
                             <p>Throwing myself aggessively into the actualization of those dreams.</p>
                         </div>
                     </div>
 
-                    <h1 class="font-serif tracking-widest text-3xl mt-4 py-5 flex justify-center">Hi, I'm Heather!</h1>
-                    <div class="">
-                        <p>I'm a creative through and through. I have two states: 1) Dreaming up something to write,
-                            design,
-                            paint, build, bake, sew, record, or code, and 2) Throwing myself aggessively into the
-                            actualization of those dreams.</h2>
-                        <h2 class="text-purple-300 tracking-widest text-xl">Work Experience</h2>
-                        <ul class="text-sm list-disc px-5 leading-6">
-                            <li class="py-2">Worked in retail throughout high school and university as a cashier,
-                                Christmas
-                                Elf, and
-                                Apple Store Genius.
-                            </li>
-                            <li class="py-2">Bachelor of Science in Interactive Arts and Technology, concentration
-                                in
-                                Interactive Systems
-                            </li>
-                            <li class="py-2">Completed 2 UX internships, at Microsoft and Evident Point Software Co
-                                </p>
-                            <li class="py-2">Volunteered for 6 months as a UX Designer for TR Domestic Violence Inc
-                                designing an
-                                emergency
-                                app</li>
-                        </ul>
-
-                        <div id="skills" class="peach">
-                            <div class="section-header cardless-item">
-                                <hr>
-                                <h2>Skills</h2>
-                            </div>
-                            <div class="info-card">
-                                <h5 class="peach">Research Methods</h5>
-                                <ul>
-                                    <li>Adobe Creative Suite</li>
-                                    <li>Figma</li>
-                                    <li>Sketch</li>
-                                    <li>InVision</li>
-                                </ul>
-                                <ul>
-                                    <li>Presenting</li>
-                                    <li>Collaboration</li>
-                                    <li>User Research</li>
-                                    <li>User Interface Design</li>
-                                </ul>
+                    <div class="info-card">
+                        <h5>Education</h5>
+                        <div class="list-chunk">
+                            <h6>Simon Fraser University, 2014-2019</h6>
+                            <div class="flex flex-row">
+                                <span class="gradient-line p-s"></span>
+                                <p>Bachelor of Science in Interactive Arts & Technology, concentration in Interactive
+                                    Systems</p>
                             </div>
                         </div>
-
-
-
-                        <h2 class="text-purple-300 tracking-widest text-xl">Dream Job</h2>
-                        <p>Dream job: Improving the experience of using a product that I believe in with a
-                            passionate and
-                            collaborative team.</p>
-
                     </div>
-                    </br>
-                    <p>If you're looking for someone to empathize with users, reimagine digital services as intuitive,
-                        attractive and delightful experiences, and collaborate candidly and diplomatically with a team
-                        to
-                        incorproate feedback and transform designs into code - I'm your girl!</p>
+
+                    <div class="info-card">
+                        <h5>Work Experience</h5>
+                        <div class="list-chunk">
+                            <h6>Microsoft, 2018</h6>
+                            <div class="flex flex-row">
+                                <span class="gradient-line s-l"></span>
+                                <p>UX Design Intern with the Microsoft Garage Internship Program, lead design for a
+                                    security-focused desktop app</p>
+                            </div>
+                        </div>
+                        <div class="list-chunk">
+                            <h6>Evident Point Software Co, 2017</h6>
+                            <div class="flex flex-row">
+                                <span class="gradient-line l-p"></span>
+                                <p>UX Design Intern improving overall experience of e-Reading software, product and
+                                    company websites, and branding licensed software</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="info-card">
+                        <h5>Volunteer Experience</h5>
+                        <div class="list-chunk">
+                            <h6>Cook Play Live, 2020</h6>
+                            <div class="flex flex-row">
+                                <span class="gradient-line p-s"></span>
+                                <p>Designed and built a Squarespace page for a New York based Food Education Nonprofit
+                                    group with custom JavaScript and CSS</p>
+                            </div>
+                        </div>
+                        <div class="list-chunk">
+                            <h6>TR Domestic Violence, 2020</h6>
+                            <div class="flex flex-row">
+                                <span class="gradient-line s-l"></span>
+                                <p>Interviewed survivors of domestic violence to design a full prototype for a Domestic
+                                    Violence emergency mobile app, conducted remote usability testing with domestic
+                                    violence advocates in healthcare, law enforcement and security roles</p>
+                            </div>
+                        </div>
+                        <div class="list-chunk">
+                            <h6>Pachno, 2020</h6>
+                            <div class="flex flex-row">
+                                <span class="gradient-line l-p"></span>
+                                <p>Designed logo options for open source bug tracking software</p>
+                            </div>
+                        </div>
+                        <div class="list-chunk">
+                            <h6>Stone Orchard, 2021</h6>
+                            <div class="flex flex-row">
+                                <span class="gradient-line p-s"></span>
+                                <p>Designed logo, custom typeface, packaging and apparel for flower farm</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div id="skills" class="peach">
+                        <div class="section-header cardless-item">
+                            <hr>
+                            <h2>Skills</h2>
+                        </div>
+                        <div class="info-card peach">
+                            <h5>Tools</h5>
+                            <ul class="tinylist">
+                                <li>Adobe CC Suite</li>
+                                <li>Figma</li>
+                                <li>Sketch</li>
+                                <li>InVision</li>
+                                <li>Axure RP</li>
+                                <li class="pt-2">Balsamiq</li>
+                                <li>Keynote</li>
+                                <li>HTML & CSS</li>
+                                <li>JavaScript</li>
+                                <li>Git</li>
+                            </ul>
+                        </div>
+                        <div class="info-card sky">
+                            <h5>Practices</h5>
+                            <ul class="tinylist">
+                                <li>Sketching</li>
+                                <li>Wireframing</li>
+                                <li>Prototyping</li>
+                                <li>User Research</li>
+
+                                <li>User Testing</li>
+                                <li>Storyboarding</li>
+                                <li>Illustration</li>
+                                <li>Web Design</li>
+
+                                <li class="pt-2">App Design</li>
+                                <li>Visual Design</li>
+                                <li>Branding</li>
+                                <li>Illustration</li>
+
+                                <li>Video Editing</li>
+                                <li>Animation</li>
+                                <li>Presenting</li>
+                                <li>Collaboration</li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+
+                    <h2 class="text-purple-300 tracking-widest text-xl">Dream Job</h2>
+                    <p>Dream job: Improving the experience of using a product that I believe in with a
+                        passionate and
+                        collaborative team.</p>
+
                 </div>
+                </br>
+                <p>If you're looking for someone to empathize with users, reimagine digital services as intuitive,
+                    attractive and delightful experiences, and collaborate candidly and diplomatically with a team
+                    to
+                    incorproate feedback and transform designs into code - I'm your girl!</p>
             </div>
+
             <div id="contact" class="bg-indigo-900 bg-hero-hexagons">
                 <div class="px-2 py-12">
                     <h3 class="text-3xl font-serif font-black text-center leading-6 text-gray-300">Get in touch!</h3>

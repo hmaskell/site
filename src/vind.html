@@ -20,7 +20,7 @@
         <link rel="icon" href="https://www.heathermaskell.com/favicon.png">
     </head>
 
-    <body class="font-sans bg-gray-900">
+    <body class="">
 
         <%- include header.html -%>
 
@@ -96,7 +96,6 @@
                         <h5 class=""><a href="#reflect">reflect</a></h5>
                     </div>
                 </div>
-
 
                 <div id="empathize" class="peach">
                     <div class="section-header cardless-item">
@@ -365,101 +364,111 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <div id="prototype" class="peach">
-                <div class="cardless-item">
-                    <hr>
-                    <h2>Prototype</h2>
+                <div id="prototype" class="peach">
+                    <div class="cardless-item">
+                        <hr>
+                        <h2>Prototype</h2>
+                    </div>
+                    <div class="cardless-item">
+                        <iframe style="border-radius: 10px; border: 1px solid rgba(0, 0, 0, 0.1);" width="100%"
+                            height="450"
+                            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FPqtyCG1qXpzQngcU75pmsG%2FVind"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
-                <div class="cardless-item">
-                    <iframe style="border-radius: 10px; border: 1px solid rgba(0, 0, 0, 0.1);" width="100%" height="450"
-                        src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FPqtyCG1qXpzQngcU75pmsG%2FVind"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
 
-            <div id="test" class="sky">
-                <div class="cardless-item">
-                    <hr>
-                    <h2>Test</h2>
+                <div id="test" class="sky">
+                    <div class="cardless-item">
+                        <hr>
+                        <h2>Test</h2>
+                    </div>
+                    <div class="info-card">
+                        <h5>Research Method</h5>
+                        <ul>
+                            <li>Think-Aloud user studies with interactive prototype</li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h5>Key Findings</h5>
+                        <ul>
+                            <li>Users felt they should not be allowed to edit History items, and that doing so would
+                                defeat
+                                the purpose of the feature</li>
+                            <li>When scanning a barcode to add a wine, if that wine already exists in the collection,
+                                users
+                                felt the app should redirect to that wine’s profile page to edit the quantity instead of
+                                to
+                                the “new wine” form</li>
+                            <li>Conducted interviews with wine collectors & enthusiasts</li>
+                            <li>Some information on wine profile pages was hidden below the fold, and users didn’t know
+                                there was more to scroll to see</li>
+                            <li>All users reported relative ease of use and expressed interest in the app for
+                                personal use</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="info-card">
-                    <h5>Research Method</h5>
-                    <ul>
-                        <li>Think-Aloud user studies with interactive prototype</li>
-                    </ul>
-                </div>
-                <div class="info-card">
-                    <h5>Key Findings</h5>
-                    <ul>
-                        <li>Users felt they should not be allowed to edit History items, and that doing so would defeat
-                            the purpose of the feature</li>
-                        <li>When scanning a barcode to add a wine, if that wine already exists in the collection, users
-                            felt the app should redirect to that wine’s profile page to edit the quantity instead of to
-                            the “new wine” form</li>
-                        <li>Conducted interviews with wine collectors & enthusiasts</li>
-                        <li>Some information on wine profile pages was hidden below the fold, and users didn’t know
-                            there was more to scroll to see</li>
-                        <li>All users reported relative ease of use and expressed interest in the app for
-                            personal use</li>
-                    </ul>
-                </div>
-            </div>
 
-            <div id="reflect" class="lemon">
-                <div class="cardless-item">
-                    <hr>
-                    <h2>Reflect</h2>
-                </div>
-                <div class="info-card">
-                    <h5>Key Takeaways</h5>
-                    <ul>
-                        <li>Interactive prototypes are fantastic for testing usability</li>
-                        <li>Testing must be conducted with intended
-                            audience to truly test validity of solution for audience problem</li>
-                        <li>Project would have benefitted from testing in context and another round of iteration</li>
-                    </ul>
-                </div>
-                <div class="info-card">
-                    <h5>Further Research Questions</h5>
-                    <div class="chunked-list">
-                        <div class="list-chunk">
-                            <p class="caption">Collection Organizer</p>
-                            <ul>
-                                <li>How might we improve the process of reflecting bulk wine purchases in the app?</li>
-                                <li>How might we improve the process of finding a wine in a collector’s physical
-                                    collection
-                                    after selecting a bottle through the app?</li>
-                                <li>How might we accurately and efficiently represent pairing information for a dish?
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="list-chunk">
-                            <p class="caption">Social Rating and Recommendations</p>
-                            <ul>
-                                <li>Exactly what information are sommeliers interested in ascertaining about others’
-                                    experiences with a given wine? </li>
-                                <li>How might we prompt users to give standardized, brief, fully informative tasting
-                                    notes?
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="list-chunk">
-                            <p class="caption">Wine Reminders</p>
-                            <ul>
-                                <li>Which reminders would be most valued or irrelevant in practice?</li>
-                            </ul>
-                        </div>
-                        <div class="list-chunk">
-                            <p class="caption">History</p>
-                            <ul>
-                                <li>Could notifications and history be combined to create a centralized info-hub?</li>
-                                <li>Is a history log as useful a feature to collectors as we had imagined it to be?</li>
-                            </ul>
+                <div id="reflect" class="lemon">
+                    <div class="cardless-item">
+                        <hr>
+                        <h2>Reflect</h2>
+                    </div>
+                    <div class="info-card">
+                        <h5>Key Takeaways</h5>
+                        <ul>
+                            <li>Interactive prototypes are fantastic for testing usability</li>
+                            <li>Testing must be conducted with intended
+                                audience to truly test validity of solution for audience problem</li>
+                            <li>Project would have benefitted from testing in context and another round of iteration
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="info-card">
+                        <h5>Further Research Questions</h5>
+                        <div class="chunked-list">
+                            <div class="list-chunk">
+                                <p class="caption">Collection Organizer</p>
+                                <ul>
+                                    <li>How might we improve the process of reflecting bulk wine purchases in the app?
+                                    </li>
+                                    <li>How might we improve the process of finding a wine in a collector’s physical
+                                        collection
+                                        after selecting a bottle through the app?</li>
+                                    <li>How might we accurately and efficiently represent pairing information for a
+                                        dish?
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-chunk">
+                                <p class="caption">Social Rating and Recommendations</p>
+                                <ul>
+                                    <li>Exactly what information are sommeliers interested in ascertaining about others’
+                                        experiences with a given wine? </li>
+                                    <li>How might we prompt users to give standardized, brief, fully informative tasting
+                                        notes?
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list-chunk">
+                                <p class="caption">Wine Reminders</p>
+                                <ul>
+                                    <li>Which reminders would be most valued or irrelevant in practice?</li>
+                                </ul>
+                            </div>
+                            <div class="list-chunk">
+                                <p class="caption">History</p>
+                                <ul>
+                                    <li>Could notifications and history be combined to create a centralized info-hub?
+                                    </li>
+                                    <li>Is a history log as useful a feature to collectors as we had imagined it to be?
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
             <div class="cardless-item">
@@ -469,3 +478,5 @@
             <%- include footer.html -%>
 
     </body>
+
+</html>

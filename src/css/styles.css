@@ -28,12 +28,21 @@
 }
 
 /* purgecss start ignore */
+
 body {
+  background-color: var(--dark);
   color: var(--light);
   transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
+
+.sticky-footer{
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
 .project-card {
   background-color: var(--darker);
 }
@@ -126,7 +135,6 @@ a {
 
 a:active {
   color: var(--heather-dark);
-  text-decoration: underline solid var(--heather-dark);
 }
 
 li {
@@ -136,6 +144,21 @@ li {
   color: var(--light);
 }
 
+/* ICON STYLING */
+
+i[class^="ph"] {
+  color: var(--light);
+  font-size: 20px;
+}
+
+.icon-left {
+  padding-right: 10px;
+}
+
+.icon-right {
+  padding-left: 10px;
+}
+
 .striken {
   text-decoration: line-through;
 }
@@ -143,6 +166,11 @@ li {
 .tooltipped {
   text-decoration: underline;
   color: var(--heather);
+}
+
+.numbered-bullet-point{
+  color: var(--sky)!important;
+  padding-right: .5rem;
 }
 
 .half-highlight {
@@ -257,24 +285,16 @@ li {
   align-content: center;
 }
 
-/* ICON STYLING */
-
-i[class^="ph"] {
-  color: var(--light);
-  font-size: 20px;
-}
-
-.icon-left {
-  padding-right: 10px;
-}
-
-.icon-right {
-  padding-left: 10px;
-}
-
 /*
  CARD / SECTION STYLING
  */
+
+ .content{
+ }
+
+ #footer{
+   width:100%;
+ }
 
  .under-construction{
    display: flex;
@@ -323,8 +343,7 @@ i[class^="ph"] {
   padding: 0 10px;
   margin:  0 0 20px 0;
   height: auto;
-  width: 100%;
-  max-width: 500px;
+  max-width: 100%;
 }
 
 .carousel-card-text{
@@ -387,12 +406,41 @@ i[class^="ph"] {
   justify-content: center;
 }
 
+#contact{
+  display:none;
+}
+
 .contact-cta{
   flex-grow:1;
 }
 
 .contact-buttons{
   flex-grow:1;
+}
+
+.gradient-line{
+  padding: 0px 1px;
+  margin: 5px 0;
+  margin-right: 10px;
+  border-radius: 10px;
+}
+
+.s-l{
+  background-image: linear-gradient(var(--sky), var(--lemon));
+}
+
+.l-p{
+  background-image: linear-gradient(var(--lemon), var(--peach));
+}
+
+.p-s{
+  background-image: linear-gradient(var(--peach), var(--sky));
+}
+
+
+
+.work-chunk{
+
 }
 
 /*
@@ -421,6 +469,12 @@ ul {
   margin-top: 15px;
   flex: 1;
   min-width: 300px;
+}
+
+.tinylist{
+  columns: 130px 2;
+  align-content: top;
+  margin-top:0px;
 }
 
 /* 
@@ -483,12 +537,14 @@ hr {
 .sky h2,
 .sky h3,
 .sky h5,
-.sky span {
+.sky span
+.sky i[class^="ph"] {
   color: var(--sky);
 }
 
 .lemon li::marker,
 .lemon .caption,
+.lemon .subhead,
 .lemon h1,
 .lemon h2,
 .lemon h3,
@@ -627,6 +683,9 @@ hr {
   }
 
   .ghost-button {
+    display: flex;
+    flex-direction: row nowrap;
+    justify-content: center;
     border-radius: 60px;
     border: 3px solid var(--heather-dark);
     color: var(--heather-light);
@@ -637,6 +696,13 @@ hr {
     border: 3px solid var(--darker);
     background-color: var(--heather-darker);
     color: var(--darker);
+  }
+
+  .ghost-button:hover{
+    background-color: var(--heather-dark);
+    color: var(--dark);
+    border: 3px solid var(--darker);
+    background-color: var(--heather-darker);
   }
 
   button a {
@@ -654,6 +720,12 @@ hr {
     border-radius: 25px;
     display: flex;
     margin-left: 1rem;
+  }
+
+  .icon-button:hover{
+    background-color: var(--heather-dark);
+    border: 3px solid var(--dark);
+    @apply shadow-3xl transition-all ease-in-out duration-200;
   }
 
   .icon-button i[class^="ph"]{

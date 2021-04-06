@@ -50,7 +50,7 @@ module.exports = {
   theme: {
     boxShadow: {
       '3xl': '0px 0px 15px 10px rgba(183,148,244,0.5)',
-      '4xl': '20px 0px 50px -10px #00C2D0, -15px -10px 50px -10px #E7005D, -5px 20px 50px -10px #FFE12E'
+      '4xl': '20px 0px 50px -10px #61D0E9, -15px -10px 50px -5px #EA736B, -5px 20px 50px -10px #FFC700'
     },
 
 
