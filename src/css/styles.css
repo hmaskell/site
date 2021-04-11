@@ -29,6 +29,11 @@
 
 /* purgecss start ignore */
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--dark);
   color: var(--light);
@@ -45,6 +50,9 @@ body {
 
 .project-card {
   background-color: var(--darker);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 /*
@@ -225,7 +233,22 @@ i[class^="ph"] {
 }
 
 .project-nav a{
-  margin-right: 1rem;
+  margin-right: 3rem;
+  color: var(--heather-light);
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.project-nav:last-child{
+  margin-right:0;
+}
+
+.project-nav a:hover{
+  color: var(--heather-dark);
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .fixedElement {
@@ -260,6 +283,8 @@ i[class^="ph"] {
   padding: 0 5px 10px 0;
 }
 
+
+
 .sketch-and-cap {
   display: flex;
   flex-flow: row wrap;
@@ -284,6 +309,11 @@ i[class^="ph"] {
 .sketch-info {
   align-content: center;
 }
+
+.project-img{
+  max-width:400px;
+}
+
 
 /*
  CARD / SECTION STYLING
@@ -321,33 +351,45 @@ i[class^="ph"] {
   padding-right: 10px;
  }
 
-
 .carousel {
   display: flex;
   flex-flow: row;
   overflow-x: auto;
   overflow-y: hidden;
-  width: 100%;
-  height: auto;
-}
-
-.carousel-card {
-  background-color: var(--darker);
-  display: flex;
-  flex-flow: column wrap;
-  width: 200px;
-  padding: 20px;
-  margin: 0 10px;
+  margin-bottom: 2rem;
 }
 
 .carousel img {
-  padding: 0 10px;
-  margin:  0 0 20px 0;
-  height: auto;
-  max-width: 100%;
+  width:45vh;
+  max-width:80vh;
+  margin-left: 1rem;
 }
 
-.carousel-card-text{
+.small-carousel {
+  display: flex;
+  flex-flow: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.small-carousel img {
+  max-height: 100%;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content:center;
+  border-radius: .25rem;
+}
+
+.carousel-img-container {
+  height: 170px;
+  display: flex;
+}
+
+.carousel-card-text p{
+  color: var(--light);
 }
 
 .info-card {
@@ -532,6 +574,18 @@ hr {
   color: var(--peach);
 }
 
+p.peach::selection {
+  background: var(--peach);
+}
+p.peach::-moz-selection {
+  background: var(--peach);
+}
+
+.peach hr {
+  background-color: var(--peach);
+  border-color: var(--peach);
+}
+
 .sky li::marker,
 .sky .caption,
 .sky h1,
@@ -541,6 +595,18 @@ hr {
 .sky span
 .sky i[class^="ph"] {
   color: var(--sky);
+}
+
+p.sky::selection {
+  background: var(--sky);
+}
+p.sky::-moz-selection {
+  background: var(--sky);
+}
+
+.sky hr {
+  background-color: var(--sky);
+  border-color: var(--sky);
 }
 
 .lemon li::marker,
@@ -554,14 +620,11 @@ hr {
   color: var(--lemon);
 }
 
-.peach hr {
-  background-color: var(--peach);
-  border-color: var(--peach);
+p.lemon::selection {
+  background: var(--lemon);
 }
-
-.sky hr {
-  background-color: var(--sky);
-  border-color: var(--sky);
+p.lemon::-moz-selection {
+  background: var(--lemon);
 }
 
 .lemon hr {
@@ -655,9 +718,32 @@ hr {
   padding: 15px 15px 20px 15px;
 }
 
+.figma-prototype{
+  height: 80vh;
+}
+
 @layer components {
   .project {
-    @apply flex-col md:flex-row w-full px-4 my-12 flex rounded-md md:mx-0;
+    @apply flex-col md:flex-row w-full px-4 my-12 flex md:mx-0;
+  }
+
+  .carousel-card {
+    background-color: var(--dark);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 220px;
+    padding: 20px;
+    margin: 20px 10px;
+    --tw-shadow: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+  }
+  
+  .carousel-card:hover{
+    @apply shadow-3xl transition-all ease-in-out duration-200;
   }
 
   .nav {
@@ -710,6 +796,12 @@ hr {
     @apply flex justify-center;
   }
 
+  .icon-button:hover{
+    background-color: var(--heather-dark);
+    border: 3px solid var(--dark);
+    @apply shadow-3xl transition-all ease-in-out duration-200;
+  }
+
   .icon-button{
     background-color: var(--heather-light);
     border: 3px solid var(--heather-dark);
@@ -721,18 +813,28 @@ hr {
     border-radius: 25px;
     display: flex;
     margin-left: 1rem;
-  }
-
-  .icon-button:hover{
-    background-color: var(--heather-dark);
-    border: 3px solid var(--dark);
-    @apply shadow-3xl transition-all ease-in-out duration-200;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
   }
 
   .icon-button i[class^="ph"]{
     color: var(--dark);
     font-size: 30px;
     transform: translate(0, -30%);
+  }
+
+  .caret i[class^="ph"]{
+    font-size: 20px;
+    transform: translate(0, -20%);
+  }
+
+  .caret{
+    float:right;
+  }
+
+  .project-card:hover {
+    @apply shadow-3xl transition-all ease-in-out duration-200;
   }
 
 
