@@ -29,6 +29,11 @@
 
 /* purgecss start ignore */
 
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: var(--dark);
   color: var(--light);
@@ -45,6 +50,9 @@ body {
 
 .project-card {
   background-color: var(--darker);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 /*
@@ -186,6 +194,10 @@ i[class^="ph"] {
   font-size: 1rem;
 }
 
+.x{
+  font-size: 60px;
+}
+
 /*
  INTERACTION STYLING
 */
@@ -222,10 +234,32 @@ i[class^="ph"] {
   width: 100%;
   background-color: var(--darker);
   padding: 1rem;
+  border: 2px solid var(--heather-light); 
+  border-left: 0;
+  border-right: 0;
 }
 
 .project-nav a{
-  margin-right: 1rem;
+  margin-right: 3rem;
+  color: var(--heather-light);
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+
+
+.project-nav a:last-of-type{
+  margin-right:0;
+}
+
+
+
+.project-nav a:hover{
+  color: var(--heather-dark);
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 .fixedElement {
@@ -253,6 +287,56 @@ i[class^="ph"] {
   display: flex;
   justify-content: center;
   padding: 20px 0;
+}
+
+.img-carousel img{
+  margin: 0 auto;
+}
+
+.img-carousel-container{
+  padding-bottom: 30px;
+}
+
+.big-ol-img{
+  max-height: 60vh!important;
+}
+
+.splide{
+  background-color: var(--darker);
+}
+
+.splide__arrows{
+  visibility:hidden;
+}
+
+.splide__arrows button{
+  background-color: var(--heather-light);
+  border: 2px solid var(--heather-dark);
+  opacity: 100%;
+}
+
+.splide__arrows button:hover{
+  background-color: var(--heather-dark);
+  border: 3px solid var(--dark);
+}
+
+.splide__arrow svg{
+  width: .8em!important;
+  height: .8em!important;
+}
+
+.splide__arrows svg:hover{
+
+}
+
+.splide__slide img{
+  max-height: 80vh;
+}
+
+@media (min-width: 769px) {
+  .splide__arrows{
+    visibility:visible;
+  }
 }
 
 .demo img {
@@ -284,6 +368,15 @@ i[class^="ph"] {
 .sketch-info {
   align-content: center;
 }
+
+.project-img{
+  max-width:400px;
+}
+
+.vid-series{
+  width: 33.33%;
+}
+
 
 /*
  CARD / SECTION STYLING
@@ -321,33 +414,49 @@ i[class^="ph"] {
   padding-right: 10px;
  }
 
-
 .carousel {
   display: flex;
   flex-flow: row;
   overflow-x: auto;
   overflow-y: hidden;
-  width: 100%;
-  height: auto;
-}
-
-.carousel-card {
-  background-color: var(--darker);
-  display: flex;
-  flex-flow: column wrap;
-  width: 200px;
-  padding: 20px;
-  margin: 0 10px;
+  margin-bottom: 2rem;
 }
 
 .carousel img {
-  padding: 0 10px;
-  margin:  0 0 20px 0;
-  height: auto;
-  max-width: 100%;
+  width:45vh;
+  max-width:80vh;
+  margin-left: 1rem;
 }
 
-.carousel-card-text{
+.small-carousel {
+  display: flex;
+  flex-flow: row;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 100%;
+}
+
+.small-carousel img {
+  max-height: 100%;
+  max-width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-content:center;
+  border-radius: .25rem;
+}
+
+.carousel-img-container {
+  height: 170px;
+  display: flex;
+}
+
+.stone-orchard-carousel img{
+  height: 480px;
+}
+
+.carousel-card-text p{
+  color: var(--light);
 }
 
 .info-card {
@@ -355,6 +464,17 @@ i[class^="ph"] {
   border-radius: 10px;
   padding: 15px;
   margin: 10px 0;
+}
+
+.card-info{
+  max-width: 70%;
+  margin:auto;
+  margin-top:1em;
+}
+
+.animation-page .info-card img, .animation-page .info-card video {
+  max-height: 80vh;
+  margin:auto;
 }
 
 .card-item {
@@ -393,9 +513,8 @@ i[class^="ph"] {
   padding: 1rem;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: end;
+  justify-content: flex-end;
   color: var(--light);
-  float: right;
 }
 
 .not-found{
@@ -527,9 +646,22 @@ hr {
 .peach h1,
 .peach h2,
 .peach h3,
+.peach h4,
 .peach h5,
 .peach span {
   color: var(--peach);
+}
+
+p.peach::selection {
+  background: var(--peach);
+}
+p.peach::-moz-selection {
+  background: var(--peach);
+}
+
+.peach hr {
+  background-color: var(--peach);
+  border-color: var(--peach);
 }
 
 .sky li::marker,
@@ -537,10 +669,23 @@ hr {
 .sky h1,
 .sky h2,
 .sky h3,
+.sky h4,
 .sky h5,
 .sky span
 .sky i[class^="ph"] {
   color: var(--sky);
+}
+
+p.sky::selection {
+  background: var(--sky);
+}
+p.sky::-moz-selection {
+  background: var(--sky);
+}
+
+.sky hr {
+  background-color: var(--sky);
+  border-color: var(--sky);
 }
 
 .lemon li::marker,
@@ -549,19 +694,17 @@ hr {
 .lemon h1,
 .lemon h2,
 .lemon h3,
+.lemon h4,
 .lemon h5,
 .lemon span {
   color: var(--lemon);
 }
 
-.peach hr {
-  background-color: var(--peach);
-  border-color: var(--peach);
+p.lemon::selection {
+  background: var(--lemon);
 }
-
-.sky hr {
-  background-color: var(--sky);
-  border-color: var(--sky);
+p.lemon::-moz-selection {
+  background: var(--lemon);
 }
 
 .lemon hr {
@@ -579,6 +722,10 @@ hr {
 
 .intro-info {
   width: 100%;
+  background-color: var(--darker);
+  border-radius: 10px;
+  padding: 15px;
+  padding-bottom: 2em;
 }
 
 .persona-title {
@@ -649,15 +796,41 @@ hr {
   margin-bottom: 10px;
 }
 
-.problem-statement {
-  max-width: 400px;
-  margin: auto;
-  padding: 15px 15px 20px 15px;
+.problem-statement{
+  padding: 5em;
+}
+
+.problem-statement p {
+  font-size: 24px!important;
+  line-height:28px;
+}
+
+.figma-prototype{
+  height: 80vh;
 }
 
 @layer components {
   .project {
-    @apply flex-col md:flex-row w-full px-4 my-12 flex rounded-md md:mx-0;
+    @apply flex-col md:flex-row w-full px-4 my-12 flex md:mx-0;
+  }
+
+  .carousel-card {
+    background-color: var(--dark);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: column wrap;
+    width: 220px;
+    padding: 20px;
+    margin: 20px 10px;
+    --tw-shadow: 0 0 #0000;
+    box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 200ms;
+  }
+  
+  .carousel-card:hover{
+    @apply shadow-3xl transition-all ease-in-out duration-200;
   }
 
   .nav {
@@ -710,6 +883,12 @@ hr {
     @apply flex justify-center;
   }
 
+  .icon-button:hover{
+    background-color: var(--heather-dark);
+    border: 3px solid var(--dark);
+    @apply shadow-3xl transition-all ease-in-out duration-200;
+  }
+
   .icon-button{
     background-color: var(--heather-light);
     border: 3px solid var(--heather-dark);
@@ -721,18 +900,28 @@ hr {
     border-radius: 25px;
     display: flex;
     margin-left: 1rem;
-  }
-
-  .icon-button:hover{
-    background-color: var(--heather-dark);
-    border: 3px solid var(--dark);
-    @apply shadow-3xl transition-all ease-in-out duration-200;
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
   }
 
   .icon-button i[class^="ph"]{
     color: var(--dark);
     font-size: 30px;
     transform: translate(0, -30%);
+  }
+
+  .caret i[class^="ph"]{
+    font-size: 20px;
+    transform: translate(0, -20%);
+  }
+
+  .caret{
+    float:right;
+  }
+
+  .project-card:hover {
+    @apply shadow-3xl transition-all ease-in-out duration-200;
   }
 
 
