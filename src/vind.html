@@ -13,52 +13,91 @@
 
         <script src="bundle.js"></script>
         <script src="https://unpkg.com/phosphor-icons"></script>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@300;600;700;800&display=swap');
-        </style>
         <link rel="icon" href="https://www.heathermaskell.com/favicon.png">
     </head>
 
     <body class="">
 
-        <%- include header.html -%>
+        <%- include alt-header.html -%>
 
-            <div class="content w-full mt-16">
-                <div class="intro-info info-card">
-                    <div class="carousel">
+            <div class="content animation-page w-full mt-16 md:px-32">
 
-                        <img src="vind/vind-main.png"
-                            alt="Homescreen of Vind app design showing wine collection categories">
-                        <!--<figure class="demo-section">
-                            alt="Homescreen of Vind app design showing wine collection categories"">
-                        <figcaption>Homescreen / Collections Screen: add wine to your collection or find wines through categories like Varietals, Recently Added and Price Range</figcaption>
-                    </figure>-->
-                        <img src="vind/vind-varietals.png" alt="">
-                        <img src="vind/vind-wine.png">
-                        <img src="vind/vind-scanadd.png">
-                        <img src="vind/vind-notifs.png">
-                        <img src="vind/vind-winery.png">
-                        <img src="vind/vind-history.png">
-                    </div>
+                <div class="cardless-item sky">
+                    <h1>Vind</h1>
+                    <p class="subhead">App design concept for wine collectors</p>
+                </div>
+
+
+                <div class="intro-info">
                     <div class="w-full flex pt-2">
                         <div class="intro-left flex-1">
-                            <h4>VIND</h4>
-                            <h6>User Research</h6>
-                            <h6>User Experience Design</h6>
-                            <h6>User Interface Design</h6>
-                            <h6>Visual Design</h6>
-                            <h6>User Testing</h6>
+                            <h6>Project Scope</h6>
+                            <p>User Research</p>
+                            <p>User Experience Design</p>
+                            <p>User Interface Design</p>
+                            <p>Visual Design</p>
+                            <p>User Testing</p>
                         </div>
                         <div class="info-right text-right flex-1">
-                            <h6><a href="https://www.sfu.ca/outlines.html?2017/fall/iat/334/d100">
+                            <h6>Collaborators</h6>
+                            <p><a href="https://www.sfu.ca/outlines.html?2017/fall/iat/334/d100">
                                     Simon Fraser University
-                                </a></h6>
-                            <h6>Macguire Rintoul</h6>
-                            <h6>Emily Cheung</h6>
+                                </a></p>
+                            <p>Macguire Rintoul</p>
+                            <p>Emily Cheung</p>
                         </div>
                     </div>
                 </div>
+
+                <div class="splide">
+                    <div class="splide__track img-carousel-container">
+                        <ul class="splide__list img-carousel">
+                            <li class="splide__slide">
+                                <img src="vind/vind-main.png"
+                                    alt="Homescreen of Vind app design showing wine collection categories">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="vind/vind-varietals.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="vind/vind-wine.png">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="vind/vind-scanadd.png">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="vind/vind-notifs.png">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="vind/vind-winery.png">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="vind/vind-history.png">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--
+                <div class="carousel hidden">
+
+                    <img src="vind/vind-main.png"
+                        alt="Homescreen of Vind app design showing wine collection categories">
+                    <figure class="demo-section">
+                        alt="Homescreen of Vind app design showing wine collection categories"">
+                    <figcaption>Homescreen / Collections Screen: add wine to your collection or find wines through categories like Varietals, Recently Added and Price Range</figcaption>
+                </figure>
+                    <img src="vind/vind-varietals.png" alt="">
+                    <img src="vind/vind-wine.png">
+                    <img src="vind/vind-scanadd.png">
+                    <img src="vind/vind-notifs.png">
+                    <img src="vind/vind-winery.png">
+                    <img src="vind/vind-history.png">
+                    <hr class="sky w-3 mx-4 px-4 my-auto flex justify-center align-center">
+                </div>
+                -->
+
+
                 <div class="project-context">
                     <div class="cardless-item">
                         <h5>The Challenge</h5>
@@ -82,12 +121,15 @@
                     </div>
                 </div>
 
-                <div id="process" class="lemon">
+                <div id="process" class="">
                     <div class="section-header cardless-item">
                         <hr>
                         <h2>Process</h2>
                     </div>
-                    <div class="project-nav flex flex-row md:justify-evenly ">
+
+
+                    <div class="project-nav flex flex-row md:justify-evenly">
+
                         <h5 class=""><a href="#empathize">empathize</a></h5>
                         <h5 class=""><a href="#define">define</a></h5>
                         <h5 class=""><a href="#ideate">ideate</a></h5>
@@ -174,11 +216,17 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cardless-item problem-statement">
+
+                    <div class="info-card problem-statement">
                         <h5>Problem Statement</h5>
-                        <p>Wine collectors need a way to remember details about their wines to maximize the potential of
-                            their collection and passion for the hobby.</p>
+                        <div class="flex flex-row">
+                            <span class="gradient-line s-l"></span>
+                            <p>Wine collectors need a way to remember details about their wines to maximize the
+                                potential of
+                                their collection and passion for the hobby.</p>
+                        </div>
                     </div>
+
                     <div class="info-card">
 
                         <div class="flex flex-col sm:flex-row md:flex-1 lg:mx-44">
@@ -286,7 +334,7 @@
                                 </ul>
                             </div>
                             <div class="list-chunk">
-                                <p class="caption striken">Social Rating and Recommendations</p>
+                                <p class="caption">Social Rating and Recommendations</p>
                                 <ul>
                                     <li>Share tasting notes with Vind community</li>
                                     <li>Search and browse community reivews to see how they reviewed wines</li>
@@ -371,8 +419,9 @@
                         <h2>Prototype</h2>
                     </div>
                     <div class="cardless-item">
-                        <iframe style="border-radius: 10px; border: 1px solid rgba(0, 0, 0, 0.1);" width="100%"
-                            height="450"
+                        <iframe class="figma-prototype"
+                            style="border-radius: 10px; border: 1px solid rgba(0, 0, 0, 0.1);" width="100%"
+                            height="!00%"
                             src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FPqtyCG1qXpzQngcU75pmsG%2FVind"
                             allowfullscreen></iframe>
                     </div>
