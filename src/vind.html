@@ -13,57 +13,70 @@
 
         <script src="bundle.js"></script>
         <script src="https://unpkg.com/phosphor-icons"></script>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
-            @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Open+Sans:wght@300;600;700;800&display=swap');
-        </style>
         <link rel="icon" href="https://www.heathermaskell.com/favicon.png">
     </head>
 
     <body class="">
 
-        <%- include header.html -%>
+        <%- include alt-header.html -%>
 
-            <div class="content w-full mt-16">
+            <div class="content animation-page w-full mt-16 md:px-32">
+
+                <div class="cardless-item">
+                    <h2>Vind</h2>
+                    <p class="subhead">App design concept for wine collectors</p>
+                </div>
 
 
-                <div class="intro-info info-card">
+                <div class="intro-info">
                     <div class="w-full flex pt-2">
                         <div class="intro-left flex-1">
-                            <h4 class="pb-2">VIND</h4>
-                            <h6>User Research</h6>
-                            <h6>User Experience Design</h6>
-                            <h6>User Interface Design</h6>
-                            <h6>Visual Design</h6>
-                            <h6>User Testing</h6>
+                            <h6>Project Scope</h6>
+                            <p>User Research</p>
+                            <p>User Experience Design</p>
+                            <p>User Interface Design</p>
+                            <p>Visual Design</p>
+                            <p>User Testing</p>
                         </div>
                         <div class="info-right text-right flex-1">
-                            <h6><a href="https://www.sfu.ca/outlines.html?2017/fall/iat/334/d100">
+                            <h6>Collaborators</h6>
+                            <p><a href="https://www.sfu.ca/outlines.html?2017/fall/iat/334/d100">
                                     Simon Fraser University
-                                </a></h6>
-                            <h6>Macguire Rintoul</h6>
-                            <h6>Emily Cheung</h6>
+                                </a></p>
+                            <p>Macguire Rintoul</p>
+                            <p>Emily Cheung</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="carousel">
-
-                    <img src="vind/vind-main.png"
-                        alt="Homescreen of Vind app design showing wine collection categories">
-                    <!--<figure class="demo-section">
-                        alt="Homescreen of Vind app design showing wine collection categories"">
-                    <figcaption>Homescreen / Collections Screen: add wine to your collection or find wines through categories like Varietals, Recently Added and Price Range</figcaption>
-                </figure>-->
-                    <img src="vind/vind-varietals.png" alt="">
-                    <img src="vind/vind-wine.png">
-                    <img src="vind/vind-scanadd.png">
-                    <img src="vind/vind-notifs.png">
-                    <img src="vind/vind-winery.png">
-                    <img src="vind/vind-history.png">
-                    <hr class="sky w-3 mx-4 px-4 my-auto flex justify-center align-center">
+                <div class="splide">
+                    <div class="splide__track img-carousel-container">
+                        <ul class="splide__list img-carousel">
+                            <li class="splide__slide">
+                                <img src="vind/vind-main.png"
+                                    alt="Homescreen of Vind app design showing wine collection categories">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="vind/vind-varietals.png" alt="">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="vind/vind-wine.png">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="vind/vind-scanadd.png">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="vind/vind-notifs.png">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="vind/vind-winery.png">
+                            </li>
+                            <li class="splide__slide">
+                                <img src="vind/vind-history.png">
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-
 
                 <div class="project-context">
                     <div class="cardless-item">
@@ -88,18 +101,26 @@
                     </div>
                 </div>
 
-                <div id="process" class="lemon">
+                <div id="process" class="">
                     <div class="section-header cardless-item">
                         <hr>
                         <h2>Process</h2>
                     </div>
-                    <div class="project-nav flex flex-row md:justify-evenly ">
-                        <h5 class=""><a href="#empathize">empathize</a></h5>
-                        <h5 class=""><a href="#define">define</a></h5>
-                        <h5 class=""><a href="#ideate">ideate</a></h5>
-                        <h5 class=""><a href="#prototype">prototype</a></h5>
-                        <h5 class=""><a href="#test">test</a></h5>
-                        <h5 class=""><a href="#reflect">reflect</a></h5>
+
+                    <div class="cardless-item">
+
+                    </div>
+
+                    <div>
+                        <p class="caption cardless-item pb-1">Process Section Links</p>
+                        <div class="project-nav flex flex-row md:justify-evenly">
+                            <h5 class=""><a href="#empathize">empathize</a></h5>
+                            <h5 class=""><a href="#define">define</a></h5>
+                            <h5 class=""><a href="#ideate">ideate</a></h5>
+                            <h5 class=""><a href="#prototype">prototype</a></h5>
+                            <h5 class=""><a href="#test">test</a></h5>
+                            <h5 class=""><a href="#reflect">reflect</a></h5>
+                        </div>
                     </div>
                 </div>
 
@@ -180,14 +201,23 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cardless-item problem-statement">
+
+                    <div class="info-card problem-statement">
                         <h5>Problem Statement</h5>
-                        <p>Wine collectors need a way to remember details about their wines to maximize the potential of
-                            their collection and passion for the hobby.</p>
+                        <div class="flex flex-row">
+                            <span class="gradient-line s-l"></span>
+                            <p class="p-statement lg:ml-4 lg:w-2/3">Wine collectors need a way to <em>
+                                    capture the details of wines</em> so they don't need to
+                                <em>rely on memory</em> when selecting a wine, making purchasing decisions, and
+                                discussing
+                                wines.
+                            </p>
+                        </div>
                     </div>
+
                     <div class="info-card">
 
-                        <div class="flex flex-col sm:flex-row md:flex-1 lg:mx-44">
+                        <div class="flex flex-col sm:flex-row md:flex-1">
                             <div class="persona-card w-full sm:flex-1">
                                 <h5>Persona</h5>
                                 <div class="persona-img">
@@ -237,35 +267,41 @@
                             <div class="w-full sm:flex-1 sm:m-4 md:flex-2">
                                 <h5>Persona Context</h5>
                                 <div class="persona-context">
-                                    <p>Zameel maintains a mid-sized collection with his wife, Sandy. His true interest
-                                        in
-                                        wine
-                                        began
-                                        in University when he took a Wine Science course, and learned to experience and
-                                        analyze
-                                        each sip. He is often gifted wines by friends and family, and visits vineyards
-                                        with
-                                        his
-                                        wife
-                                        on holidays, usually departing
-                                        with a case in tow.</p>
+                                    <p>
+                                        Zameel maintains a mid-sized collection with his wife, Sandy. His true interest
+                                        in wine began in University when he learned to experience and analyze each sip
+                                        in a Wine Science course.
+                                        He is often gifted wines by friends and family, and visits vineyards with Sandy
+                                        on holiday, routinely heading home with a case of wine to add to their
+                                        collection.
+                                    </p>
                                     </br>
-                                    <p>Zameel would love to select a bottle quickly while he lets dinner simmer, without
-                                        having
-                                        to risk handling and disrupting each bottle until he finds a suitable pairing.
-                                        He
-                                        struggles with keeping track of expiration dates and has found himself terribly
-                                        dissapointed when he left a bottle to age too long and it turned to vinegar.
-                                        When
-                                        selecting a wine, he might have a specific grape or price range in mind,
-                                        depending
-                                        on
-                                        the occasion. When contemplating purchasing wine, he would like to know whether
-                                        he
-                                        has
-                                        previously enjoyed that wine, how many similar wines he already has, and whether
-                                        the
-                                        price point is comparable to previous purchases of similar vintages.</p>
+                                    <p class="caption">Goals</p>
+                                    <p>Zameel wants to select a wine without leaving the kitchen as dinner simmers, and
+                                        without handling and disrupting other bottles before making a selection.
+                                    </p>
+
+                                    <p>
+                                        When selecting a wine for drinking, he might have a specific grape or price
+                                        range in mind,
+                                        depending on the occasion.
+                                        When contemplating purchasing wine, he would like to
+                                        know whether he has previously enjoyed that wine, how many similar wines he
+                                        already has, and whether the price point is comparable to previous purchases of
+                                        similar vintages.
+                                    </p>
+                                    </br>
+                                    <p class="caption">Frustrations</p>
+                                    <p>
+                                        He struggles to remember when the expensive wines in his collection will expire.
+                                        He fears he will forget a special bottle and leave it to turn to vinegar in his
+                                        cellar. When discussing wines with fellow wine enthusiasts or when looking to
+                                        restock
+                                        favourite bottles, he struggles to remember the details of a bottle including
+                                        the varietal, vintage, price, country, house, and his tasting notes for that
+                                        bottle.
+                                    </p>
+                                    </br>
                                 </div>
                             </div>
                         </div>
@@ -292,7 +328,7 @@
                                 </ul>
                             </div>
                             <div class="list-chunk">
-                                <p class="caption striken">Social Rating and Recommendations</p>
+                                <p class="caption">Social Rating and Recommendations</p>
                                 <ul>
                                     <li>Share tasting notes with Vind community</li>
                                     <li>Search and browse community reivews to see how they reviewed wines</li>
@@ -325,14 +361,12 @@
                         <div class="sketch-chunk">
                             <h5 class="index">01</h5>
                             <div class="sketch-and-cap">
-                                <img src="vind/collectionsketch_1.png">
+                                <img src="vind/collectionsketch_3.png">
                                 <div class="sketch-info">
-                                    <p class="caption">Collection/Homescreen - 01</p>
-                                    <p>This version of the Collection / Homescreen organizes wines into categories in
-                                        anticipation of various user goals, including seeking wines that were recently
-                                        added, seeking a specific varietal, viewing wines within a certain price range,
-                                        and
-                                        selecting from wines within their ideal drinking age.</p>
+                                    <p class="caption">Collection Homescreen - 01</p>
+                                    <p>Select a wine based on vintage, varietal, and price
+                                        point. The search bar serves as a call-to-action to
+                                        select a wine, and as a global keyword search.</p>
                                 </div>
                             </div>
                         </div>
@@ -341,14 +375,11 @@
                             <div class="sketch-and-cap">
                                 <img src="vind/collectionsketch_2.png">
                                 <div class="sketch-info">
-                                    <p class="caption">Collection/Homescreen - 02</p>
-                                    <p>This version lends to consideration of each varietal, as they are presented one
-                                        at a
-                                        time and can be swiped through. When a varietal sounds promising, scrolling down
-                                        reveals a list of all the vintages of that varietal in their collection. If a
-                                        user
-                                        opens the app in search of a specific wine, they can search or switch to grid
-                                        view.
+                                    <p class="caption">Collection Homescreen - 02</p>
+                                    <p>Consider each varietal individually, presented and swiped through one at a time.
+                                        Scroll down to explore the vintages of that
+                                        varietal in the collection. Search bar and grid view offer alternative methods
+                                        to select a wine.
                                     </p>
                                 </div>
                             </div>
@@ -356,14 +387,26 @@
                         <div class="sketch-chunk">
                             <h5 class="index">03</h5>
                             <div class="sketch-and-cap">
-                                <img src="vind/collectionsketch_3.png">
+                                <img src="vind/collectionsketch_1.png">
                                 <div class="sketch-info">
-                                    <p class="caption">Collection/Homescreen - 03</p>
-                                    <p>In this version, the Collection section of the screen is highly adaptable to the
-                                        user’s goal. They can get right to their vintage options with a varietal, price
-                                        point, or other key factor in mind. The search bar serves as a call-to-action to
-                                        select a wine they would like to drink, as well as a prompt to search for a
-                                        particular vintage if they have one in mind.
+                                    <p class="caption">Collection Homescreen - 03
+                                    </p>
+                                    <p>Wines are organized into user-goal based categories such as searching for wines
+                                        that were
+                                        recently
+                                        added, seeking a specific varietal, viewing wines within a certain price range,
+                                        and selecting from wines within their ideal drinking age.
+                                    </p>
+                                    </br>
+                                    <p class="caption">Selected
+                                    </p>
+                                    <p>
+                                        This information architecture was best suited to meet Zameel's goals regardless
+                                        of whether he opened the app to browse his collection, zero-in on a bottle he
+                                        already had in mind, or update his collection. Further iterations also
+                                        introduced the option to 'See All' wines in a category, which could then be
+                                        filtered and sorted. Further iterations included categories for Price Range and
+                                        Year as these may be key factors in selecitng a wine.
                                     </p>
                                 </div>
                             </div>

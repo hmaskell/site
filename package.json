@@ -4,11 +4,12 @@
   "description": "Portfolio Site",
   "main": "index.js",
   "dependencies": {
+    "@splidejs/splide": "^2.4.21",
     "tailwindcss": "^2.0.1",
     "webpack": "^5.6.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.0.2",
+    "autoprefixer": "^10.2.5",
     "copy-webpack-plugin": "^6.3.2",
     "css-loader": "^5.0.1",
     "ejs-compiled-loader": "^3.0.0",
