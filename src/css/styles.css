@@ -71,7 +71,7 @@ body {
 */
 
 h1 {
-  font-size: 2.411em;
+  font-size: 2.411rem;
   font-family: Capriola;
   font-weight: 200;
 }
@@ -152,6 +152,8 @@ li {
   color: var(--light);
 }
 
+
+
 /* ICON STYLING */
 
 i[class^="ph"] {
@@ -166,6 +168,7 @@ i[class^="ph"] {
 .icon-right {
   padding-left: 10px;
 }
+
 
 .striken {
   text-decoration: line-through;
@@ -239,19 +242,23 @@ i[class^="ph"] {
   border-right: 0;
 }
 
-.project-nav a{
+.project-nav h5{
   margin-right: 3rem;
   color: var(--heather-light);
   transition-property: color;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
+  align-self: center;
 }
 
-
-
-.project-nav a:last-of-type{
+.project-nav h5:last-child {
   margin-right:0;
 }
+
+.project-nav h5:last-child a {
+  margin-right:1rem;
+}
+
 
 
 
@@ -303,6 +310,7 @@ i[class^="ph"] {
 
 .splide{
   background-color: var(--darker);
+  border-radius: 10px;
 }
 
 .splide__arrows{
@@ -329,14 +337,91 @@ i[class^="ph"] {
 
 }
 
+.splide__slide{
+  margin: auto;
+justify-content: center;
+display: flex;
+align-content: center;
+}
+
 .splide__slide img{
   max-height: 80vh;
 }
 
 @media (min-width: 769px) {
+
+h1{
+  font-size: 4.76rem;
+}
+/* 
+h2{
+  font-size: 3.81rem;
+}
+
+h3{
+  font-size: 3.05rem;
+}
+
+h4{
+  font-size: 2.44rem;
+}
+
+h5{
+  font-size: 1.95rem;
+}
+
+h5{
+  font-size: 1.56rem;
+} */
+
   .splide__arrows{
     visibility:visible;
   }
+
+  .splide__slide{
+  padding: 0 3rem;
+  }
+
+  .card-info{
+  max-width: 70%;
+  margin:auto;
+  }
+
+  .about-whole-section{
+    width:100%;
+    display:flex;
+    flex-direction:row;
+  }
+
+  .about-half-section:first-child{
+    margin-right: 10px;
+  }
+
+  .about-half-section{
+    width:50%;
+  }
+
+  .skills-practices{
+    width:100%;
+  }
+
+  #skills{
+    margin-right:10px;
+  }
+
+  .p-statement em{
+    padding: 4px 10px!important ;
+    border-radius: 5px;
+  }
+
+  .problem-statement{
+    padding: 4em;
+  }
+
+  .gradient-line{
+    margin-right: 20px;
+  }
+
 }
 
 .demo img {
@@ -349,12 +434,15 @@ i[class^="ph"] {
   flex-flow: row wrap;
   width: 100%;
   align-items:center;
+  justify-content: center;
 }
 
 .sketch-chunk img {
   flex: 1;
   min-width: 200px;
   max-width: 500px;
+  justify-content: center;
+  margin:inherit!important;
 }
 
 .sketch-chunk .sketch-info {
@@ -363,6 +451,7 @@ i[class^="ph"] {
   align-items: center;
   justify-content: center;
   min-width: 200px;
+  margin-right:2rem;
 }
 
 .sketch-info {
@@ -387,6 +476,7 @@ i[class^="ph"] {
 
  #footer{
    width:100%;
+   padding-top:2rem;
  }
 
  .under-construction{
@@ -428,12 +518,17 @@ i[class^="ph"] {
   margin-left: 1rem;
 }
 
+#books .carousel-card img{
+  max-height: 95%;
+}
+
 .small-carousel {
   display: flex;
   flex-flow: row;
   overflow-x: auto;
   overflow-y: hidden;
   width: 100%;
+  background-color: var(--darker);
 }
 
 .small-carousel img {
@@ -451,9 +546,6 @@ i[class^="ph"] {
   display: flex;
 }
 
-.stone-orchard-carousel img{
-  height: 480px;
-}
 
 .carousel-card-text p{
   color: var(--light);
@@ -466,9 +558,17 @@ i[class^="ph"] {
   margin: 10px 0;
 }
 
+.splide li{
+  display: flex;
+}
+
+.splide .info-card{
+  display:flex;
+  flex-direction: column;
+  align-content: center;
+}
+
 .card-info{
-  max-width: 70%;
-  margin:auto;
   margin-top:1em;
 }
 
@@ -539,7 +639,7 @@ i[class^="ph"] {
 }
 
 .gradient-line{
-  padding: 0px 1px;
+  padding: 0px 1.7px;
   margin: 5px 0;
   margin-right: 10px;
   border-radius: 10px;
@@ -586,7 +686,7 @@ ul {
 }
 
 .list-chunk {
-  margin-top: 15px;
+  margin-top: 10px;
   flex: 1;
   min-width: 300px;
 }
@@ -595,6 +695,10 @@ ul {
   columns: 130px 2;
   align-content: top;
   margin-top:0px;
+}
+
+.resume .list-chunk{
+  margin-top: 20px;
 }
 
 /* 
@@ -716,6 +820,7 @@ p.lemon::-moz-selection {
   color: var(--light) !important;
 }
 
+
 /*
  CUSTOM STYLING
  */
@@ -797,17 +902,36 @@ p.lemon::-moz-selection {
 }
 
 .problem-statement{
-  padding: 5em;
+  padding: 2em;
 }
 
 .problem-statement p {
   font-size: 24px!important;
-  line-height:28px;
+  line-height:35px;
+}
+
+.p-statement em{
+  font-style: normal;
+  color: var(--dark);
+  background: var(--sky);
+  padding: 4px 0;
 }
 
 .figma-prototype{
   height: 80vh;
 }
+
+.about-details{
+  display: flex;
+  flex-direction: column;
+  width:100%;
+}
+
+
+.Feedback, .SocialProof, .Footer{
+  display:none!important;
+}
+
 
 @layer components {
   .project {
@@ -819,7 +943,7 @@ p.lemon::-moz-selection {
     border-radius: 10px;
     display: flex;
     flex-flow: column wrap;
-    width: 220px;
+    min-width: 204px;
     padding: 20px;
     margin: 20px 10px;
     --tw-shadow: 0 0 #0000;
