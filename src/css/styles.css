@@ -308,6 +308,8 @@ i[class^="ph"] {
   max-height: 60vh!important;
 }
 
+
+
 .splide{
   background-color: var(--darker);
   border-radius: 10px;
@@ -939,6 +941,7 @@ p.lemon::-moz-selection {
   .project {
     @apply flex-col md:flex-row w-full px-4 my-12 flex md:mx-0;
   }
+
 
   .carousel-card {
     background-color: var(--dark);
