@@ -213,6 +213,13 @@ i[class^="ph"] {
   list-style-type: none;
 }
 
+p a:hover{
+  color: var(--heather-dark);
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .ghost-button h5 {
   color: var(--heather-light) !important;
 }
@@ -1012,10 +1019,22 @@ p.lemon::-moz-selection {
     @apply flex justify-center;
   }
 
-  .icon-button:hover{
-    background-color: var(--heather-dark);
+  .peach.icon-button:hover{
+    background-color: var(--peach);
     border: 3px solid var(--dark);
-    @apply shadow-3xl transition-all ease-in-out duration-200;
+    @apply shadow-peach transition-all ease-in-out duration-200;
+  }
+
+  .sky.icon-button:hover{
+    background-color: var(--sky);
+    border: 3px solid var(--dark);
+    @apply shadow-sky transition-all ease-in-out duration-200;
+  }
+
+  .lemon.icon-button:hover{
+    background-color: var(--lemon);
+    border: 3px solid var(--dark);
+    @apply shadow-lemon transition-all ease-in-out duration-200;
   }
 
   .icon-button{
