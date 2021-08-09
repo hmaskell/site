@@ -993,6 +993,9 @@ p.lemon::-moz-selection {
     border-radius: 60px;
     border: 3px solid var(--heather-dark);
     color: var(--heather-light);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
   }
 
   .ghost-button a{
@@ -1011,9 +1014,12 @@ p.lemon::-moz-selection {
 
   .ghost-button:hover{
     @apply shadow-3xl transition-all ease-in-out duration-200;
-    border: 3px solid var(--darker);
+    border: 3px solid var(--heather-light);
     background-color: var(--heather-darker);
     color: var(--darker);
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
   }
 
   
