@@ -220,13 +220,7 @@ p a:hover{
   transition-duration: 150ms;
 }
 
-.ghost-button h5 {
-  color: var(--heather-light) !important;
-}
 
-.ghost-button i[class^="ph"] {
-  color: var(--heather-light);
-}
 
 .button-div {
   width:100%;
@@ -993,26 +987,43 @@ p.lemon::-moz-selection {
   }
 
   .ghost-button {
+    padding: .5em 1em;
     display: flex;
-    flex-direction: row nowrap;
     justify-content: center;
     border-radius: 60px;
     border: 3px solid var(--heather-dark);
     color: var(--heather-light);
   }
 
-  button:hover {
+  .ghost-button a{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .ghost-button h5{
+    color: var(--heather-light);
+  }
+
+  .ghost-button i[class^="ph"] {
+    color: var(--heather-light);
+  }
+
+
+  .ghost-button:hover{
     @apply shadow-3xl transition-all ease-in-out duration-200;
     border: 3px solid var(--darker);
     background-color: var(--heather-darker);
     color: var(--darker);
   }
 
-  .ghost-button:hover{
-    background-color: var(--heather-dark);
-    color: var(--dark);
+  
+ 
+
+  button:hover {
+    @apply shadow-3xl transition-all ease-in-out duration-200;
     border: 3px solid var(--darker);
     background-color: var(--heather-darker);
+    color: var(--darker);
   }
 
   button a {
