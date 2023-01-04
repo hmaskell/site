@@ -23,6 +23,9 @@ const htmlFileBuildRules = htmlFiles.map(filename => new HtmlWebpackPlugin({
 }));
 
 module.exports = {
+    stats: {
+        children: true
+    },
     entry: "./src/index.js",
     output: {
         path: path.resolve(__dirname, "build"),
