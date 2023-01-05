@@ -694,6 +694,10 @@ ul {
   padding: 0 15px;
 }
 
+.bulleted-list{
+  list-style-type: circle;  
+}
+
 .chunked-list {
   display: flex;
   flex-flow: row wrap;
