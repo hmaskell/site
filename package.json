@@ -6,7 +6,7 @@
   "dependencies": {
     "@splidejs/splide": "^2.4.21",
     "tailwindcss": "^2.0.1",
-    "webpack": "^5.6.0"
+    "webpack": "^4.37.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.2.5",
