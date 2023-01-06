@@ -1031,7 +1031,7 @@ p.lemon::-moz-selection {
 }
 
 .featured-project-card{
-  margin-top: 3rem;
+  margin: 1.5rem 0;
 }
 
 .featured-project-card:hover .card-buttons-container{
