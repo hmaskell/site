@@ -598,6 +598,10 @@ h5{
   margin-bottom: 0;
 }
 
+.site-link {
+
+}
+
 .project-context {
   display: flex;
   flex-flow: row wrap;
@@ -672,10 +676,11 @@ h5{
 }
 
 .go-to-site-button-container{
-justify-content: right;
-float: right;
 }
 
+.go-to-site-button-container h5{
+ white-space: nowrap;
+}
 
 
 /*
@@ -967,8 +972,8 @@ p.lemon::-moz-selection {
     border-radius: 10px;
     display: flex;
     flex-flow: column wrap;
-    width:300px;
-    height: fill;
+    width:270px;
+    height:310px;
     min-width: 204px;
     padding: 20px;
     margin: 20px 10px;
