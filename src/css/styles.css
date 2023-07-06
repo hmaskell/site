@@ -312,7 +312,17 @@ p a:hover {
   max-height: 60vh !important;
 }
 
+.single-image {
+  heights: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
+}
 
+.single-image img {
+  height: 75%;
+  justify-content: center;
+}
 
 .splide {
   background-color: var(--darker);
@@ -349,7 +359,7 @@ p a:hover {
 }
 
 .splide__slide img {
-  max-height: 80vh;
+  
 }
 
 @media (min-width: 769px) {
@@ -522,7 +532,6 @@ h5{
 
 .carousel img {
   width: 45vh;
-  max-width: 80vh;
   margin-left: 1rem;
 }
 
@@ -582,7 +591,6 @@ h5{
 
 .animation-page .info-card img,
 .animation-page .info-card video {
-  max-height: 80vh;
   margin: auto;
 }
 
@@ -973,7 +981,6 @@ p.lemon::-moz-selection {
     display: flex;
     flex-flow: column wrap;
     width:270px;
-    height:310px;
     min-width: 204px;
     padding: 20px;
     margin: 20px 10px;
