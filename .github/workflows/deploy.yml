@@ -1,8 +1,5 @@
 name: Build and Deploy
-
-env:
-  NODE_OPTIONS: --openssl-legacy-provider
-  
+ 
 on:
   push:
     branches:
@@ -11,6 +8,12 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
+
+      - name: Setup Node.js environment
+        uses: actions/setup-node@v3.7.0
+        with:
+          node-version: 16
+          
       - name: Checkout 🛎️
         uses: actions/checkout@v2.3.1
 
