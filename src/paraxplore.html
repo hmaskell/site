@@ -58,42 +58,14 @@
 
 
 
-                <div class="splide">
-                    <div class="splide__track img-carousel-container">
-                        <ul class="splide__list img-carousel">
-                            <li class="splide__slide">
-                                <img src="paraxplore/vind-main.png"
-                                    alt="Homescreen of Vind app design showing wine collection categories">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="vind/vind-varietals.png" alt="">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="vind/vind-wine.png">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="vind/vind-scanadd.png">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="vind/vind-notifs.png">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="vind/vind-winery.png">
-                            </li>
-                            <li class="splide__slide">
-                                <img src="vind/vind-history.png">
-                            </li>
-                        </ul>
-                    </div>
-                </div>
 
                 <div class="project-context">
                     <div class="cardless-item">
                         <h5>The Challenge</h5>
-                        The goal was to apply Dr. SHireen's
-                        findings to create an interactive digital experience that facilitated common successful
-                        strategies for selecting a winning design from over 1000 options.
-                        <p>
+                        Design a prototype for a design support tool allowing designers to upload 1000 design
+                            alternatives
+                            and narrow down their decision based on self-determined criteria. Designed to work in tandem
+                            with parametric generative design tools                        <p>
 
                         </p>
                     </div>
@@ -130,99 +102,112 @@
                 <div id="empathize" class="peach">
                     <div class="section-header cardless-item">
                         <hr>
-                        <h2>Dr.Shireen's Research</h2>
-                    </div>
+                        <h2>Dr. Shireen's Research</h2></div>
+                        <div class="info-card">
+                            <h5 class="peach">Context</h5>
+                            <p>Generative design software allows designers and other stakeholders to easily generate thousands of design
+                                alternatives. However, finding the best solution from thousands can be like trying to find a needle in a
+                                haystack.</p>
+                            </br>
+                            <p>For her thesis, PhD candidate Naghmi Shireen observed patterns in designers' processes when
+                                tasked with physically sorting through 1000 solutions to select the best. Based on Shireen's
+                                findings, I designed an interface intended to support designers in the process of
+                                identifying
+                                the best design(s) out of thousands.</p>
+                            </br>
+                            <p>For this project, I was given the unique opportunity to work in the Computational Design Lab
+                                at
+                                Simon Fraser University with supervising professor Halil Erhan.</p>
+                            </br>
+                            <p>I co-authored a paper entitled ParaXplore: Uncovering Design Patterns when the Design Space
+                                is
+                                Loaded with Thousands of Solutions, detailing research investigating the potential for a
+                                creativity support tool for designers who are working with more than 1000 design
+                                alternatives,
+                                with supporting mockups demonstrating how this research could inform an interface to
+                                facilitate
+                                this process. The paper was submitted to CHI 2019, an ACM Conference on Human Factors in
+                                Computing Systems, along with the following demo video I created to showcase Shireen's
+                                research
+                                and my prototype.</p>
+                            </br>
+                        </div>
+                        <div class="info-card">
+                            <h5 class="peach">Sampling</h5>
+                            <p>Shireen found that when participants were given 1000 design alternatives to sort through,
+                                they
+                                would often use a strategy she calls "Sampling". This refers to analyzing a subset of 20-25
+                                alternatives, a chunk off the original 1000, reducing the cognitive overload of considering
+                                all
+                                1000 at once. The number of designs included in a sample varied from participant to
+                                participant
+                                and throughout the process.</p>
+                            </br>
+                            <p>In ParaXplore, Sampling is how users view designs. After uploading the set of images they
+                                wish to
+                                sort though, users immediately take a sample to start the process through the SAMPLE button.
+                                From here, users can see a manageable sample of designs and will begin to understand the
+                                essential criteria that any winning design must meet. </p>
+                        </div>
+
                     <div class="info-card">
-                        <h5 class="peach">Research Methods</h5>
-                        <ul>
-                            <li>Dr. Shireen conducted </li>
-                        </ul>
+                        <h5 class="peach">Assessing Designs and Assigning to Collections</h5>
+                        <p>When designs meet user-specified criteria, they can be added to a Collection named after the
+                            criteria the designs within it meet. When designs do not meet the criteria, they can be
+                            added
+                            into a Rejected collection, mirroring the process of participants in Shireen's study. </p>
                     </div>
 
                     <div class="info-card">
-                        <h5 class="peach">Research Findings</h5>
+                        <h5 class="peach">Managing Collections</h5>
+                        <p>In the later stages of the evaluation process, as participants' ideal design became more
+                            defined
+                            to themselves, they would often mass-rearrange the contents of their collections. In other
+                            words, they would merge similar collections into one, branch off a collection into two
+                            collections based on more specific criteria, or reject whole collections upon realizing that
+                            the
+                            criteria the designs inside met was weaker than others.
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <h5 class="peach">Generated Recommendations</h5>
+                        <p>Based on the strength and weakness of each design indicated through the number of Collections
+                            a
+                            design is a part of, the number of positive and negative tags, and the value of the fondness
+                            slider, a Best Options collection is automatically generated.
+                        </p>
+                    </div>
+
+                    <div class="info-card">
+                        <h5 class="peach">Timeframe and Tools</h5>
+                        <p>Over the course of 4 months, Shireen and I met weekly for consultations to discuss ideas for
+                            the
+                            proposed functionality and interface in relation to her research, we went through cycles of
+                            sketching, discussing, prototyping, demonstrating and evaluating. I used Adobe XD to create
+                            mockups from sketches and to create an interactive prototype.</p>
+                    </div>
+
+                    <div class="info-card">
+                        <h5 class="peach">Future Plans</h5>
                         <ul>
-                            <li>Dr. Shireen conducted </li>
+                            <li>Conduct an Expert Review to measure the success of proposed interface</li>
+                            <li>Further iteration & testing</li>
+                            <li>Build ParaXplore with the help of other Research
+                                Assistants in the Computational Design Lab at Simon Fraser University</li>
+                            <li>Submit research paper to conferences & academic journals *presented at SigCHI 2019
+                            </li>
                         </ul>
                     </div>
                 </div>
+                </div>
 
-                <h1 class="uppercase flex justify-center">ParaXplore</h1>
-                <h2 class="flex justify-center">Selection and Sorting App Design</h2>
-                <p>Design prototype for a design support tool allowing designers to upload 1000 design
-                    alternatives
-                    and narrow down their decision based on self-determined criteria. Designed to work in tandem
-                    with parametric generative design tools</p>
 
-                <h4>Problem Context</h4>
-                <p>Generative design software allows designers to easily generate thousands of design
-                    alternatives.
-                    However, selecting the best solution from thousands is like trying to find a needle in a
-                    haystack.</p>
-                <p>For her thesis, PhD candidate Naghmi Shireen observed patterns in designers' processes when
-                    tasked with physically sorting through 1000 solutions to select the best. Based on Shireen's
-                    findings, I designed an interface intended to support designers in the process of
-                    identifying
-                    the best design(s) out of thousands.</p>
-                <p>For this project, I was given the unique opportunity to work in the Computational Design Lab
-                    at
-                    Simon Fraser University under my professor Halil Erhan.</p>
-                <p>I co-authored a paper entitled ParaXplore: Uncovering Design Patterns when the Design Space
-                    is
-                    Loaded with Thousands of Solutions, detailing research investigating the potential for a
-                    creativity support tool for designers who are working with more than 1000 design
-                    alternatives,
-                    with supporting mockups demonstrating how this research could inform an interface to
-                    facilitate
-                    this process. The paper was submitted to CHI 2019, an ACM Conference on Human Factors in
-                    Computing Systems, along with the following demo video I created to showcase Shireen's
-                    research
-                    and my prototype.</p>
 
-                <h4>Sampling</h4>
-                <p>Shireen found that when participants were given 1000 design alternatives to sort through,
-                    they
-                    would often use a strategy she calls "Sampling". This refers to analyzing a subset of 20-25
-                    alternatives, a chunk off the original 1000, reducing the cognitive overload of considering
-                    all
-                    1000 at once. The number of designs included in a sample varied from participant to
-                    participant
-                    and throughout the process.</p>
-                <p>In ParaXplore, Sampling is how users view designs. After uploading the set of images they
-                    wish to
-                    sort though, users immediately take a sample to start the process through the SAMPLE button.
-                    From here, users can see a manageable sample of designs and will begin to understand the
-                    essential criteria that any winning design must meet. </p>
 
-                <h4>Assessing Designs and Assigning to Collections</h4>
-                <p>When designs meet user-specified criteria, they can be added to a Collection named after the
-                    criteria the designs within it meet. When designs do not meet the criteria, they can be
-                    added
-                    into a Rejected collection, mirroring the process of participants in Shireen's study. </p>
+<!-- --
 
-                <h4>Managing Collections</h4>
-                <p>In the later stages of the evaluation process, as participants' ideal design became more
-                    defined
-                    to themselves, they would often mass-rearrange the contents of their collections. In other
-                    words, they would merge similar collections into one, branch off a collection into two
-                    collections based on more specific criteria, or reject whole collections upon realizing that
-                    the
-                    criteria the designs inside met was weaker than others.
-                </p>
 
-                <h4>Generated Recommendations</h4>
-                <p>Based on the strength and weakness of each design indicated through the number of Collections
-                    a
-                    design is a part of, the number of positive and negative tags, and the value of the fondness
-                    slider, a Best Options collection is automatically generated.
-                </p>
-
-                <h4>Timeframe and Tools</h4>
-                <p>Over the course of 4 months, Shireen and I met weekly for consultations to discuss ideas for
-                    the
-                    proposed functionality and interface in relation to her research, we went through cycles of
-                    sketching, discussing, prototyping, demonstrating and evaluating. I used Adobe XD to create
-                    mockups from sketches and to create an interactive prototype.</p>
 
                 <div class="info-card">
                     <h5>Future Plans</h5>
@@ -640,7 +625,7 @@
             <div class="cardless-item">
                 <!-- <a href="/paraxplore.html">Next Project</a> -->
             </div>
-
+-->
             <%- include footer.html -%>
 
     </body>
